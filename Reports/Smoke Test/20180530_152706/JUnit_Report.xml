@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="44" tests="0" failures="1" errors="0">
+   <testsuite name="Smoke Test" tests="0" failures="1" errors="0" time="44" timestamp="2018-05-30 15:27:12" hostname="ARJUN - ARJUNS" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706"/>
+         <property name="logFiles" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706\\first, C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706\\1527708476240.png"/>
+         <property name="hostName" value="ARJUN - ARJUNS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 66.0.3359.181"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="4d9db9bfe1b602c009f30566a6faee85"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sponsorship" classname="Test Cases/Sponsorship" status="FAILED">
+         <failure type="FAILED" message="Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)"/>
+         <system-out><![CDATA[2018-05-30 15:27:13 - [TEST_CASE][FAILED] - Test Cases/Sponsorship: Test Cases/Sponsorship FAILED because (of) Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)
+
+2018-05-30 15:27:13 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-05-30 15:27:17 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-05-30 15:27:17 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-05-30 15:27:18 - [MESSAGE][PASSED] - Current window maximized
+
+2018-05-30 15:27:18 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/sponsorship/content' successfully
+
+2018-05-30 15:27:20 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/sponsorship/content' successfully
+
+2018-05-30 15:27:20 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_types' is clicked on
+
+2018-05-30 15:27:21 - [MESSAGE][PASSED] - Object: 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_types' is clicked on
+
+2018-05-30 15:27:21 - [TEST_STEP][PASSED] - setText: Text '50' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_amount'
+
+2018-05-30 15:27:21 - [MESSAGE][PASSED] - Text '50' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_amount'
+
+2018-05-30 15:27:21 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-05-30 15:27:21 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706\\first]]
+
+2018-05-30 15:27:21 - [TEST_STEP][PASSED] - setText: Text '725 chestnut st' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line1'
+
+2018-05-30 15:27:22 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line1'
+
+2018-05-30 15:27:22 - [TEST_STEP][PASSED] - setText: Text 'west' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line2'
+
+2018-05-30 15:27:22 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line2'
+
+2018-05-30 15:27:22 - [TEST_STEP][PASSED] - setText: Text 'erie' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addresslocality'
+
+2018-05-30 15:27:22 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addresslocality'
+
+2018-05-30 15:27:22 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'PA' are selected in object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-05-30 15:27:23 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-05-30 15:27:23 - [TEST_STEP][PASSED] - setText: Text '16507' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addresspostal_code'
+
+2018-05-30 15:27:24 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_addresspostal_code'
+
+2018-05-30 15:27:24 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_op' is clicked on
+
+2018-05-30 15:27:25 - [MESSAGE][PASSED] - Object: 'Object Repository/sponser/Page_sponsorship Form  dynamic-usgb/input_op' is clicked on
+
+2018-05-30 15:27:25 - [TEST_STEP][FAILED] - setText: Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)
+
+2018-05-30 15:27:56 - [MESSAGE][FAILED] - Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)
+[[ATTACHMENT|C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180530_152706\\1527708476240.png]]]]></system-out>
+         <system-err><![CDATA[2018-05-30 15:27:13 - [TEST_CASE][FAILED] - Test Cases/Sponsorship: Test Cases/Sponsorship FAILED because (of) Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-05-30 15:27:12 - [TEST_SUITE][FAILED] - Smoke Test: Test Cases/Sponsorship FAILED because (of) Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)]]></system-out>
+      <system-err><![CDATA[2018-05-30 15:27:12 - [TEST_SUITE][FAILED] - Smoke Test: Test Cases/Sponsorship FAILED because (of) Unable to set text 'mallik@gmail.com' of object 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae' located by 'By.xpath: //input[@type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']' not found)]]></system-err>
+   </testsuite>
+</testsuites>

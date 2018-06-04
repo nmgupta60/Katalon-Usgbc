@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="17" tests="1" failures="0" errors="0">
+   <testsuite name="Smoke Test" tests="1" failures="0" errors="0" time="17" timestamp="2018-05-31 15:58:57" hostname="ARJUN - ARJUNS" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180531_155851"/>
+         <property name="logFiles" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180531_155851\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180531_155851\\1527796753992.png"/>
+         <property name="hostName" value="ARJUN - ARJUNS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 66.0.3359.181"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="85634879f4de25928f23ede20283ef2f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Membership" classname="Test Cases/Membership" status="PASSED">
+         <system-out><![CDATA[2018-05-31 15:58:58 - [TEST_CASE][PASSED] - Test Cases/Membership: Test Cases/Membership
+
+2018-05-31 15:58:59 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-05-31 15:59:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-05-31 15:59:03 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/membership/contact' successfully
+
+2018-05-31 15:59:05 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/membership/contact' successfully
+
+2018-05-31 15:59:05 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-05-31 15:59:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-05-31 15:59:06 - [TEST_STEP][PASSED] - setText: Text 'mallik@gmail.com' is set on object 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-05-31 15:59:07 - [MESSAGE][PASSED] - Text 'mallik@gmail.com' is set on object 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-05-31 15:59:07 - [TEST_STEP][PASSED] - setText: Text 'initpass' is set on object 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-05-31 15:59:07 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-05-31 15:59:07 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-05-31 15:59:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-05-31 15:59:09 - [TEST_STEP][PASSED] - setText: Text 'gupta' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_attention_to'
+
+2018-05-31 15:59:09 - [MESSAGE][PASSED] - Text 'gupta' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_attention_to'
+
+2018-05-31 15:59:09 - [TEST_STEP][PASSED] - setText: Text 'promantus' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_company'
+
+2018-05-31 15:59:10 - [MESSAGE][PASSED] - Text 'promantus' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_company'
+
+2018-05-31 15:59:10 - [TEST_STEP][PASSED] - setText: Text '1808 Glengate Circle' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addressaddress_line1'
+
+2018-05-31 15:59:10 - [MESSAGE][PASSED] - Text '1808 Glengate Circle' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addressaddress_line1'
+
+2018-05-31 15:59:10 - [TEST_STEP][PASSED] - setText: Text 'West' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addressaddress_line2'
+
+2018-05-31 15:59:10 - [MESSAGE][PASSED] - Text 'West' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addressaddress_line2'
+
+2018-05-31 15:59:10 - [TEST_STEP][PASSED] - setText: Text 'Erie' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addresslocality'
+
+2018-05-31 15:59:10 - [MESSAGE][PASSED] - Text 'Erie' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addresslocality'
+
+2018-05-31 15:59:10 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'PA' are selected in object 'Object Repository/Page_Contact Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-05-31 15:59:12 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/Page_Contact Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-05-31 15:59:12 - [TEST_STEP][PASSED] - setText: Text '16507' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addresspostal_code'
+
+2018-05-31 15:59:12 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Page_Contact Form  dynamic-usgbc/input_addresspostal_code'
+
+2018-05-31 15:59:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/input_terms' is clicked on
+
+2018-05-31 15:59:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/input_terms' is clicked on
+
+2018-05-31 15:59:12 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-05-31 15:59:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-05-31 15:59:13 - [TEST_STEP][PASSED] - verifyTextPresent: Text 'This user is already a members...' is not present on page 
+
+2018-05-31 15:59:13 - [MESSAGE][WARNING] - Text 'This user is already a members...' is not present on page 
+
+2018-05-31 15:59:13 - [TEST_STEP][PASSED] - takeScreenshot: Taking screenshot successfully
+
+2018-05-31 15:59:14 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\ARJUN\\Katalon Studio\\Test USGBC\\Reports\\Smoke Test\\20180531_155851\\1527796753992.png]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-05-31 15:58:57 - [TEST_SUITE][PASSED] - Smoke Test: Test Cases/Membership]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
