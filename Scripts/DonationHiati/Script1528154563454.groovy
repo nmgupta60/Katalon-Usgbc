@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/donations/center/online/haiti')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/select_2550100other'), '$25', true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/select_2550100other'), '$25', false)
 
 WebUI.setText(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_donor_name'), 'promantus')
 

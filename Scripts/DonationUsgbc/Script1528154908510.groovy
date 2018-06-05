@@ -18,7 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
@@ -26,16 +26,19 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/donations/center/online/usgbc')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/select_2550100other'), '$25',true)
+WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/select_2550100other'), '$50', false)
 
 WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_donor_name'), 'promantus')
 
-WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_name'),'arjun')
+WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_name'), 'arjun')
 
 WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_email'),'arjun@gmail.com')
 
 WebUI.click(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_op'))
 
-CustomKeywords.'newPackage.payment.getPayment'(371449635392376, 'Amex',11, 2028,9997)
+CustomKeywords.'newPackage.payment.getPayment'(371449635392376, 'Amex', 11, 2028, 9997)
 
-CustomKeywords.'newPackage.payment.getBillingDetails'('1808 Glengate', 'circle','Morrisville', 'NC', '27560')
+CustomKeywords.'newPackage.payment.getBillingDetails'('1808 Glengate', 'circle', 'Morrisville', 'NC', '27560')
+
+
+

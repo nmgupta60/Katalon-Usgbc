@@ -4,6 +4,12 @@
    <name>select_2550100other</name>
    <tag></tag>
    <elementGuidId>41ea1489-b152-4cbc-9f0f-6fc2b40e9d3a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;edit-choose-amount&quot;)[count(. | //select[@id = 'edit-choose-amount' and @name = 'choose_amount' and (text() = '$25$50$100other' or . = '$25$50$100other')]) = count(//select[@id = 'edit-choose-amount' and @name = 'choose_amount' and (text() = '$25$50$100other' or . = '$25$50$100other')])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -49,7 +55,7 @@
       <value>$25$50$100other</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
