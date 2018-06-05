@@ -4,6 +4,12 @@
    <name>select_Select01020304050607080</name>
    <tag></tag>
    <elementGuidId>ea1b6402-3d5b-441b-8058-46a8b89f4da0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;edit-cardexpiration-month&quot;)[count(. | //select[@id = 'edit-cardexpiration-month' and @name = 'cardexpiration_month' and (text() = 'Select010203040506070809101112' or . = 'Select010203040506070809101112')]) = count(//select[@id = 'edit-cardexpiration-month' and @name = 'cardexpiration_month' and (text() = 'Select010203040506070809101112' or . = 'Select010203040506070809101112')])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -56,7 +62,7 @@
       <value>Select010203040506070809101112</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>

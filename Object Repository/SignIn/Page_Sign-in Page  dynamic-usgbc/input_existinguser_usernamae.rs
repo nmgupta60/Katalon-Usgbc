@@ -4,6 +4,12 @@
    <name>input_existinguser_usernamae</name>
    <tag></tag>
    <elementGuidId>a047370b-ce31-4ebe-afc2-5d6a405ab82c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;edit-existinguser-usernamae&quot;)[count(. | //input[@data-drupal-selector = 'edit-existinguser-usernamae' and @type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email']) = count(//input[@data-drupal-selector = 'edit-existinguser-usernamae' and @type = 'text' and @id = 'edit-existinguser-usernamae' and @name = 'existinguser_usernamae' and @placeholder = 'Email'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -21,7 +27,7 @@
       <value>col-md-7 col-xs-12 usgbc-form-input form-text</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-drupal-selector</name>
       <type>Main</type>
@@ -70,7 +76,7 @@
       <value>Email</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
