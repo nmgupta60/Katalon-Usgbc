@@ -86,16 +86,16 @@ class SignIn {
 	}
 
 	@Keyword
-	def public static void getSignIn() {
-		ExcelData myData = (ExcelData) findTestData("Test Data")
-		myData.changeSheet("SignIn")
+	def public static void getSignIn(String Email, String Password) {
+//		ExcelData myData = (ExcelData) findTestData("Test Data")
+//		myData.changeSheet("SignIn")
 
-		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), myData.getValue(6,1) )
+		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), Email )
 
-		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), myData.getValue(7,1))
+		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), Password)
 
 		WebUI.click(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op'))
 
-		//return signIn;
+		
 	}
 }

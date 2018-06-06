@@ -29,7 +29,7 @@ public class payment {
 
 
 	@Keyword
-	def public java.lang.Object getPayment(int cardNumber, String cardholderName,int expMonth, int expyear, int cvv ) {
+	def public static void getPayment(String cardholderName,String cardNumber, String expMonth, String expYear, String cvv ) {
 
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'), cardholderName)
@@ -38,28 +38,26 @@ public class payment {
 
 		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'), expMonth,true)
 
-		WebUI.selectOptionByValue(findTestObject('payment/sample/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), expyear,true)
+		WebUI.selectOptionByValue(findTestObject('payment/sample/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), expYear,true)
 
 		WebUI.setText(findTestObject('payment/sample/Page_Payment Form  dynamic-usgbc/input_security_code'), cvv)
 
-		return payment;
 	}
 
 
 	@Keyword
-	def public java.lang.Object getBillingDetails(String address1,String address2, String city, String state, String zip) {
+	def public static void getBillingDetails(String billingAddress1,String billingAddress2, String billingCity, String billingState, String billingZip) {
 
 
-		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'), address1)
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'), billingAddress1)
 
-		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l_1'), address2)
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l_1'), billingAddress2)
 
-		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'), city)
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'), billingCity)
 
-		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'), state,true)
+		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'), billingState,true)
 
-		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'), zip)
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'), billingZip)
 
-		return billingDetails;
 	}
 }
