@@ -38,10 +38,9 @@ public class payment {
 
 		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'), expMonth,true)
 
-		WebUI.selectOptionByValue(findTestObject('payment/sample/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), expYear,true)
+		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), expYear,true)
 
-		WebUI.setText(findTestObject('payment/sample/Page_Payment Form  dynamic-usgbc/input_security_code'), cvv)
-
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_security_code'), cvv)
 	}
 
 
@@ -51,13 +50,12 @@ public class payment {
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'), billingAddress1)
 
-		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l_1'), billingAddress2)
+		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'), billingAddress2)
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'), billingCity)
 
 		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'), billingState,true)
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'), billingZip)
-
 	}
 }

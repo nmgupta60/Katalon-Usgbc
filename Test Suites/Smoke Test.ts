@@ -46,5 +46,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Store</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7f973f16-f806-476d-83c1-dbb97fab90bf</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

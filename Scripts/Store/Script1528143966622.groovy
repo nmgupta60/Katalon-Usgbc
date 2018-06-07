@@ -6,9 +6,11 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import javax.xml.stream.events.Comment
 
 import org.junit.After
+import org.testng.annotations.Listeners
 
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -28,34 +30,37 @@ import newPackage.SignIn
 import newPackage.payment
 import newPackage.storeDetails
 import main.XlsReader
+import internal.GlobalVariable
 
-def obj = new XlsReader()
-String email = obj.getCellData("SignIn", "Email", 1)
-String password = obj.getCellData("SignIn", "Password", 1)
 
-String address1 = obj.getCellData("Store","Street1",1)
-String address2 = obj.getCellData("Store","Street2",1)
-String city = obj.getCellData("Store","City",1)
-String state = obj.getCellData("Store","StateCode",1)
-String zip = obj.getCellData("Store","Zip",1)
+String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-String cardholderName = obj.getCellData("Payment", "Name", 1)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 1)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 1)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 1)
-String cvv = obj.getCellData("Payment","SecurityCode", 1)
+XlsReader obj = new XlsReader(path)
+String email = obj.getCellData("SignIn", "Email", 2)
+String password = obj.getCellData("SignIn", "Password", 2)
 
-String billingAddress1 = obj.getCellData("Payment","Street1",1)
-String billingAddress2 = obj.getCellData("Payment","Street2",1)
-String billingCity = obj.getCellData("Payment","City",1)
-String billingState = obj.getCellData("Payment","State",1)
-String billingZip = obj.getCellData("Payment","Zip",1)
+String address1 = obj.getCellData("Store","Street1",2)
+String address2 = obj.getCellData("Store","Street2",2)
+String city = obj.getCellData("Store","City",2)
+String state = obj.getCellData("Store","StateCode",2)
+String zip = obj.getCellData("Store","Zip",2)
 
-WebUI.openBrowser('')
+String cardholderName = obj.getCellData("Payment", "Name", 2)
+String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
+String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
+String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
+String cvv = obj.getCellData("Payment","SecurityCode", 2)
 
-WebUI.maximizeWindow()
+String billingAddress1 = obj.getCellData("Payment","Street1",2)
+String billingAddress2 = obj.getCellData("Payment","Street2",2)
+String billingCity = obj.getCellData("Payment","City",2)
+String billingState = obj.getCellData("Payment","State",2)
+String billingZip = obj.getCellData("Payment","Zip",2)
 
-WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/store')
+
+WebUI.navigateToUrl(GlobalVariable.BaseUrl+store)
+
+//WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/store')
 
 WebUI.click(findTestObject('Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0'))
 

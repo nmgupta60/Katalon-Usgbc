@@ -6,11 +6,11 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>66f3e42b-286a-409c-a435-51342e6092bc</dataFileGUID>
-   <dataSourceUrl>C:\Users\ARJUN\Desktop\NEW USGBC\DynamicUsgbc\DynamicUsgbc\DynamicUsgbc.xlsx</dataSourceUrl>
+   <dataSourceUrl>DynamicUsgbc.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Payment</sheetName>
+   <sheetName>Store</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
