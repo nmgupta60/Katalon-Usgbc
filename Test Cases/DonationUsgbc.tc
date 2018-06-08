@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>65d136fe-82eb-49f4-ac77-cf7408fae947</testCaseGuid>
+   <variable>
+      <defaultValue>'/donations/center/online/usgbc'</defaultValue>
+      <description></description>
+      <id>26b29f4d-efda-401e-ad29-9f8ec6241e39</id>
+      <masked>false</masked>
+      <name>DonationUsgbcUrl</name>
+   </variable>
 </TestCaseEntity>

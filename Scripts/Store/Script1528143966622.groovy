@@ -62,22 +62,22 @@ WebUI.navigateToUrl(GlobalVariable.BaseUrl+store)
 
 //WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/store')
 
-WebUI.click(findTestObject('Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0'))
-
-WebUI.click(findTestObject('Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op'))
-
-WebUI.click(findTestObject('Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout'))
-
+//WebUI.click(findTestObject('Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0'))
+WebUI.click(GreenApplePins)
+//WebUI.click(findTestObject('Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op'))
+WebUI.click(AddCart)
+//WebUI.click(findTestObject('Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout'))
+WebUI.click(Checkout)
 storeDetails.storeContact(address1, address2, city, state, zip)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio'), 
-    'GROUND_HOME_DELIVERY', true)
-
+//WebUI.selectOptionByValue(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio'),'GROUND_HOME_DELIVERY', true)
+WebUI.selectOptionByValue(ShipServiceType, 'GROUND_HOME_DELIVERY', false)
 WebUI.delay(8)
 
-WebUI.click(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2'))
-
-WebUI.click(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)'))
+//WebUI.click(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2'))
+WebUI.click(SelectEmail)
+//WebUI.click(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)'))
+WebUI.click(StorePageContinue)
 //myData.changeSheet("SignIn")
 SignIn.getSignIn(email, password)
 

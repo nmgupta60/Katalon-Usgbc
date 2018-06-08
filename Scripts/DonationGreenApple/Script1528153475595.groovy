@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -18,23 +19,36 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import newPackage.payment
+import main.XlsReader
+import newPackage.Donation
 
-WebUI.openBrowser('')
+String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-WebUI.maximizeWindow()
+XlsReader obj = new XlsReader(path)
 
-WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/donations/center/online/mygreenapple')
+String amount = obj.getCellData("Donation","Amount", 2)
+String donarName = obj.getCellData("Donation","donarName", 2)
+String dedicatedTo = obj.getCellData("Donation","DedicatedTo", 2)
+String email = obj.getCellData("Donation","Email", 2)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/select_2550100other'),'$25' , false)
+String cardholderName = obj.getCellData("Payment", "Name", 2)
+String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
+String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
+String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
+String cvv = obj.getCellData("Payment","SecurityCode", 2)
 
-WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_donor_name'), 'promantus')
+String billingAddress1 = obj.getCellData("Payment","Street1",2)
+String billingAddress2 = obj.getCellData("Payment","Street2",2)
+String billingCity = obj.getCellData("Payment","City",2)
+String billingState = obj.getCellData("Payment","State",2)
+String billingZip = obj.getCellData("Payment","Zip",2)
 
-WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_name'),'Arjun')
+WebUI.navigateToUrl(GlobalVariable.BaseUrl+DonationGreenAppleUrl)
 
-WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_email'), 'arjun@gmail.com')
+Donation.donationGreenApple(amount, donarName, dedicatedTo, email)
 
-WebUI.click(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_op'))
+payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
 
-CustomKeywords.'newPackage.payment.getPayment'(371449635392376, 'Amex',11, 2028,9997)
+payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
 
-CustomKeywords.'newPackage.payment.getBillingDetails'('1808 Glengate', 'circle','Morrisville', 'NC', '27560')

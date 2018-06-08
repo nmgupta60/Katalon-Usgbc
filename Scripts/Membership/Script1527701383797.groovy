@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -19,39 +20,56 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import newPackage.SignIn
+import newPackage.membershipDetails
+import main.XlsReader
+import newPackage.payment
 
-WebUI.openBrowser('')
+String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/membership/contact')
+XlsReader obj = new XlsReader(path)
+String email = obj.getCellData("SignIn", "Email", 2)
+String password = obj.getCellData("SignIn", "Password", 2)
 
-WebUI.click(findTestObject('Page_Contact Form  dynamic-usgbc/a_Sign in'))
+String attentionTo = obj.getCellData("MembershipContact","AttentionTo", 2)
+String company = obj.getCellData("MembershipContact","Company", 2)
+String address1 = obj.getCellData("MembershipContact","Street1",2)
+String address2 = obj.getCellData("MembershipContact","Street2",2)
+String city = obj.getCellData("MembershipContact","City",2)
+String state = obj.getCellData("MembershipContact","StateCode",2)
+String zip = obj.getCellData("MembershipContact","Zip",2)
 
-WebUI.setText(findTestObject('Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), 'mallik@gmail.com')
+String term = obj.getCellData("MembershipContact","Term",2)
+String organizationName = obj.getCellData("MembershipContact","OrganizationName",2)
+String website = obj.getCellData("MembershipContact","Website",2)
+String email1 = obj.getCellData("MembershipContact","Email",2)
+String category = obj.getCellData("MembershipContact","IndustryCategory",2)
+String subCategory = obj.getCellData("MembershipContact","SubCategory",2)
+String revenue = obj.getCellData("MembershipContact","Revenue",2)
 
-WebUI.setText(findTestObject('Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), 'initpass')
+String cardholderName = obj.getCellData("Payment", "Name", 2)
+String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
+String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
+String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
+String cvv = obj.getCellData("Payment","SecurityCode", 2)
 
-WebUI.click(findTestObject('Page_Sign-in Page  dynamic-usgbc/input_op'))
+String billingAddress1 = obj.getCellData("Payment","Street1",2)
+String billingAddress2 = obj.getCellData("Payment","Street2",2)
+String billingCity = obj.getCellData("Payment","City",2)
+String billingState = obj.getCellData("Payment","State",2)
+String billingZip = obj.getCellData("Payment","Zip",2)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_attention_to'), 'gupta')
+WebUI.navigateToUrl(GlobalVariable.BaseUrl+membershipUrl)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_company'), 'promantus')
+WebUI.click(clickSignIn)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_addressaddress_line1'), '1808 Glengate Circle')
+SignIn.getSignIn(email, password)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_addressaddress_line2'), 'West')
+membershipDetails.personalMailingDetails(attentionTo, company,address1, address2, city, state, zip)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_addresslocality'), 'Erie')
+membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue)
 
-WebUI.selectOptionByValue(findTestObject('Page_Contact Form  dynamic-usgbc/select_- Select -AlabamaAlaska'), 'PA', true)
+payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
 
-WebUI.setText(findTestObject('Page_Contact Form  dynamic-usgbc/input_addresspostal_code'), '16507')
+payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
 
-WebUI.click(findTestObject('Page_Contact Form  dynamic-usgbc/input_terms'))
-
-WebUI.click(findTestObject('Page_Contact Form  dynamic-usgbc/input_op'))
-
-WebUI.verifyTextPresent('This user is already a members...', false, FailureHandling.OPTIONAL)
-
-//WebUI.takeScreenshot()
-WebUI.delay(5)
-not_run:WebUI.closeBrowser()

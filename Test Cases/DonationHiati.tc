@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d1c0126b-0073-4d62-a31a-7864b6b048cb</testCaseGuid>
+   <variable>
+      <defaultValue>'/donations/center/online/haiti'</defaultValue>
+      <description></description>
+      <id>19bec547-ebdd-438b-a1d4-8245148f162f</id>
+      <masked>false</masked>
+      <name>DonationHaitiUrl</name>
+   </variable>
 </TestCaseEntity>

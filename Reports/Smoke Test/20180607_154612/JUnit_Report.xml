@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="35" tests="1" failures="0" errors="0">
+   <testsuite name="Smoke Test" tests="1" failures="0" errors="0" time="35" timestamp="2018-06-07 15:46:19" hostname="ARJUN - ARJUNS" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180607_154612"/>
+         <property name="logFiles" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180607_154612\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ARJUN - ARJUNS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 66.0.3359.181"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="5a71e4c4da376a73d764614ee72eb403"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Store" classname="Test Cases/Store" status="PASSED">
+         <system-out><![CDATA[2018-06-07 15:46:20 - [TEST_CASE][PASSED] - Test Cases/Store: Test Cases/Store
+
+2018-06-07 15:46:21 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-07 15:46:21 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-07 15:46:21 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-07 15:46:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-07 15:46:25 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-07 15:46:26 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-07 15:46:26 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-07 15:46:26 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("Store", "Street1", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("Store", "Street2", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("Store", "City", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("Store", "StateCode", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("Store", "Zip", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-07 15:46:28 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//store' successfully
+
+2018-06-07 15:46:29 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//store' successfully
+
+2018-06-07 15:46:29 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0' is clicked on
+
+2018-06-07 15:46:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0' is clicked on
+
+2018-06-07 15:46:30 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op' is clicked on
+
+2018-06-07 15:46:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op' is clicked on
+
+2018-06-07 15:46:31 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout' is clicked on
+
+2018-06-07 15:46:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout' is clicked on
+
+2018-06-07 15:46:33 - [TEST_STEP][PASSED] - Statement - newPackage.storeDetails.storeContact(address1, address2, city, state, zip): Delayed 3 second(s)
+
+2018-06-07 15:46:33 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line1'
+
+2018-06-07 15:46:33 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line2'
+
+2018-06-07 15:46:34 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresslocality'
+
+2018-06-07 15:46:35 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-07 15:46:35 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresspostal_code'
+
+2018-06-07 15:46:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-07 15:46:38 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'GROUND_HOME_DELIVERY' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio' 
+
+2018-06-07 15:46:38 - [MESSAGE][PASSED] - All options with value 'GROUND_HOME_DELIVERY' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio' 
+
+2018-06-07 15:46:38 - [TEST_STEP][PASSED] - delay: Delayed 8 second(s)
+
+2018-06-07 15:46:46 - [MESSAGE][PASSED] - Delayed 8 second(s)
+
+2018-06-07 15:46:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2' is clicked on
+
+2018-06-07 15:46:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2' is clicked on
+
+2018-06-07 15:46:46 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)' is clicked on
+
+2018-06-07 15:46:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)' is clicked on
+
+2018-06-07 15:46:48 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-07 15:46:48 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-07 15:46:48 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-07 15:46:50 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-07 15:46:50 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-07 15:46:50 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-07 15:46:51 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-07 15:46:51 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-07 15:46:52 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-07 15:46:52 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-07 15:46:52 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-07 15:46:52 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-07 15:46:52 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-07 15:46:52 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-07 15:46:54 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-07 15:46:54 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-07 15:46:54 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-07 15:46:54 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-07 15:46:54 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-07 15:46:55 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-07 15:46:19 - [TEST_SUITE][PASSED] - Smoke Test: Test Cases/Store]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

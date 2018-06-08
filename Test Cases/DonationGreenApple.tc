@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4c0b1108-b7bc-4daf-a609-8b1ba47c140d</testCaseGuid>
+   <variable>
+      <defaultValue>'/donations/center/online/mygreenapple'</defaultValue>
+      <description></description>
+      <id>d0486a7e-eded-4979-abb4-fa3f9dbd6e56</id>
+      <masked>false</masked>
+      <name>DonationGreenAppleUrl</name>
+   </variable>
 </TestCaseEntity>

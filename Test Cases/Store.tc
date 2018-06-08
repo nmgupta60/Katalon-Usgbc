@@ -12,4 +12,46 @@
       <masked>false</masked>
       <name>store</name>
    </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0')</defaultValue>
+      <description></description>
+      <id>3f933c13-a910-43cc-99a2-0ee308188848</id>
+      <masked>false</masked>
+      <name>GreenApplePins</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_Green Apple Lapel Pins  dynami/input_op')</defaultValue>
+      <description></description>
+      <id>655073de-6587-4960-982a-c1a55390542e</id>
+      <masked>false</masked>
+      <name>AddCart</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_Shopping cart  dynamic-usgbc/a_Checkout')</defaultValue>
+      <description></description>
+      <id>8619bda8-d36c-439b-9e4c-9a2e9cfc9822</id>
+      <masked>false</masked>
+      <name>Checkout</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio')</defaultValue>
+      <description></description>
+      <id>0ea0f4d6-24de-477d-abc0-d16bf40167df</id>
+      <masked>false</masked>
+      <name>ShipServiceType</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2')</defaultValue>
+      <description></description>
+      <id>ebff8054-ccbf-4015-acd9-4abdeebdeb1f</id>
+      <masked>false</masked>
+      <name>SelectEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Store/Page_USGBC Store Contact Form  dyna/input_op (1)')</defaultValue>
+      <description></description>
+      <id>39841191-95c5-4d8b-a09f-602f9840e81e</id>
+      <masked>false</masked>
+      <name>StorePageContinue</name>
+   </variable>
 </TestCaseEntity>

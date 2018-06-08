@@ -4,7 +4,7 @@
    <name>Smoke Test</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-05-31T15:58:51</lastRun>
+   <lastRun>2018-06-07T15:46:12</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -14,8 +14,20 @@
    <testCaseLink>
       <guid>fab57c5a-d30b-4c64-9310-77aa0c492bc3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Membership</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>27238050-6873-497b-869e-5aeb762e994e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b6949c68-2019-40ff-b910-3eed85d7a84e</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>f023a0d6-5f46-49f6-9650-262cd839cd68</guid>
@@ -26,20 +38,38 @@
    <testCaseLink>
       <guid>856e1b1d-b8a2-4341-a361-e0e9f797f638</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DonationHiati</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>19bec547-ebdd-438b-a1d4-8245148f162f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>696ba514-dc7b-4d56-b9c6-6374bc602ca6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DonationGreenApple</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d0486a7e-eded-4979-abb4-fa3f9dbd6e56</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>12455f28-25a5-47ab-8c34-1e2f8fbf6927</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/DonationUsgbc</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>26b29f4d-efda-401e-ad29-9f8ec6241e39</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>8b9afd89-67c4-45f8-94f2-2adb0242ce8e</guid>
@@ -51,6 +81,42 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>7f973f16-f806-476d-83c1-dbb97fab90bf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3f933c13-a910-43cc-99a2-0ee308188848</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>655073de-6587-4960-982a-c1a55390542e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8619bda8-d36c-439b-9e4c-9a2e9cfc9822</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0ea0f4d6-24de-477d-abc0-d16bf40167df</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ebff8054-ccbf-4015-acd9-4abdeebdeb1f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>39841191-95c5-4d8b-a09f-602f9840e81e</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

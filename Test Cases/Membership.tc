@@ -5,4 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>27441b8a-b4e7-4d3c-bd13-0c1ef9eba1e8</testCaseGuid>
+   <variable>
+      <defaultValue>'/membership/contact'</defaultValue>
+      <description></description>
+      <id>27238050-6873-497b-869e-5aeb762e994e</id>
+      <masked>false</masked>
+      <name>membershipUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Membership Registration/Page_Contact Form  dynamic-usgbc/a_Sign in')</defaultValue>
+      <description></description>
+      <id>b6949c68-2019-40ff-b910-3eed85d7a84e</id>
+      <masked>false</masked>
+      <name>clickSignIn</name>
+   </variable>
 </TestCaseEntity>

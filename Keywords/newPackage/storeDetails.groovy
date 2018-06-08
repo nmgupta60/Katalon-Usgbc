@@ -26,21 +26,21 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class storeDetails {
-	
+
 	@Keyword
 	def public static void storeContact(String address1, String address2, String city, String state, String zip){
-		
+
 		WebUI.setText(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line1'), address1)
-		
+
 		WebUI.setText(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line2'),address2)
-		
+
 		WebUI.setText(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresslocality'), city)
-		
+
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_- Select -AlabamaAlaska'),
-			state, true)
-		
+				state, true)
+
 		WebUI.setText(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresspostal_code'),zip)
-		
+
 		WebUI.delay(3)
 	}
 }
