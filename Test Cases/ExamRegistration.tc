@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ExamRegistration</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87c6662d-31c2-4f7a-a5fb-7b0cf6a882f4</testCaseGuid>
+   <variable>
+      <defaultValue>'/register-exams/exam'</defaultValue>
+      <description></description>
+      <id>9d82bfa4-0e93-4d50-9724-2bb8af7a1af3</id>
+      <masked>false</masked>
+      <name>examRegistrationUrl</name>
+   </variable>
+</TestCaseEntity>

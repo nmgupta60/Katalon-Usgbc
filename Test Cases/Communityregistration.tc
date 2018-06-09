@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Communityregistration</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>76dc784d-b09c-4a29-8c18-72e26aa393ef</testCaseGuid>
+   <variable>
+      <defaultValue>'/community/registration'</defaultValue>
+      <description></description>
+      <id>3cc19fbe-347f-4c80-a098-9549710b955b</id>
+      <masked>false</masked>
+      <name>membershipUrl</name>
+   </variable>
+</TestCaseEntity>
