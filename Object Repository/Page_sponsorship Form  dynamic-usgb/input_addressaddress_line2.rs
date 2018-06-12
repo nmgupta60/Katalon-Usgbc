@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_security_code</name>
+   <name>input_addressaddress_line2</name>
    <tag></tag>
-   <elementGuidId>353a155b-b2a1-4301-8540-d3217a279397</elementGuidId>
+   <elementGuidId>6312766d-4ca7-436b-a51b-c10c9aea721e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,35 +18,49 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>col-md-7 col-xs-12 usgbc-form-input form-text</value>
+      <value>address-line2 form-text required</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>address-line2</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Street address line 2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-drupal-selector</name>
       <type>Main</type>
-      <value>edit-security-code</value>
+      <value>edit-address-address-line2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>password</value>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>edit-security-code</value>
+      <value>edit-address-address-line2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>security_code</value>
+      <value>address[address_line2]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,27 +74,27 @@
       <matchCondition>equals</matchCondition>
       <name>maxlength</name>
       <type>Main</type>
-      <value>6</value>
+      <value>128</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-drupal-states</name>
+      <name>required</name>
       <type>Main</type>
-      <value>{&quot;visible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;card&quot;}},&quot;invisible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;check&quot;}}}</value>
+      <value>required</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>aria-required</name>
       <type>Main</type>
-      <value>Security code</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;edit-security-code&quot;)</value>
+      <value>id(&quot;edit-address-address-line2&quot;)</value>
    </webElementProperties>
 </WebElementEntity>

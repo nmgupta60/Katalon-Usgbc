@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>examRegistrationUrl</name>
    </variable>
+   <variable>
+      <defaultValue>findTestObject('Register Exams/Page_Exam types and information For/input_op')</defaultValue>
+      <description></description>
+      <id>0897efb5-eb10-4591-8f58-57b78c88bd5c</id>
+      <masked>false</masked>
+      <name>exampageContinue</name>
+   </variable>
 </TestCaseEntity>

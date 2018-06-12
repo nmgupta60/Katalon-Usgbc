@@ -20,8 +20,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-
+import newPackage.ExamRegistrationDetails
 import newPackage.SignIn
+import newPackage.membershipDetails
 import newPackage.payment
 
 import main.XlsReader
@@ -35,15 +36,15 @@ String password = obj.getCellData("SignIn", "Password", 2)
 String examType = obj.getCellData("ExamRegistration", "ExamType", 2)
 String language = obj.getCellData("ExamRegistration","Language", 2)
 
-String address1 = obj.getCellData("MembershipContact","Street1",2)
-String address2 = obj.getCellData("MembershipContact","Street2",2)
-String city = obj.getCellData("MembershipContact","City",2)
-String state = obj.getCellData("MembershipContact","StateCode",2)
-String zip = obj.getCellData("MembershipContact","Zip",2)
+String address1 = obj.getCellData("ExamRegistration","Street1",2)
+String address2 = obj.getCellData("ExamRegistration","Street2",2)
+String city = obj.getCellData("ExamRegistration","City",2)
+String state = obj.getCellData("ExamRegistration","StateCode",2)
+String zip = obj.getCellData("ExamRegistration","Zip",2)
 
-String dob = obj.getCellData("MembershipContact","DOB", 2)
-String jobTitle = obj.getCellData("MembershipContact","JobTitle", 2)
-String organization = obj.getCellData("MembershipContact","Organization", 2)
+String dob = obj.getCellData("ExamRegistration","DOB", 2)
+String jobTitle = obj.getCellData("ExamRegistration","JobTitle", 2)
+String organization = obj.getCellData("ExamRegistration","Organization", 2)
 
 String cardholderName = obj.getCellData("Payment", "Name", 2)
 String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
@@ -59,45 +60,14 @@ String billingZip = obj.getCellData("Payment","Zip",2)
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+examRegistrationUrl)
 
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/select_LEED AP BDC ExamLEED AP'), examType, false)
-
-WebUI.selectOptionByLabel(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/select_- Select Language -Engl'), language, false)
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/input_accomodation'))
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/input_veteran'))
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/input_op'))
+ExamRegistrationDetails.examInfo(examType, language)
 
 SignIn.getSignIn(email, password)
 WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam types and information For/input_op'))
 
-//WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_attention_to'), null)
+WebUI.click(exampageContinue)
 
-//WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_company'), null)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_addressaddress_line1'), address1)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_addressaddress_line2'), address2)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_addresslocality'),city)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/select_- Select -AlabamaAlaska'), state, false)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_addresspostal_code'), zip)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_bday'), dob)
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_gender (1)'))
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_jobtitle'), jobTitle)
-
-WebUI.setText(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_organization'), organization)
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_pdl'))
-
-WebUI.click(findTestObject('Object Repository/Register Exams/Page_Exam candidate registration Fo/input_terms'))
+ExamRegistrationDetails.candidateDetails(address1, address2, city, state, zip, dob, jobTitle, organization)
 
 payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
 

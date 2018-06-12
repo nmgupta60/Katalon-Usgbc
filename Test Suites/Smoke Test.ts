@@ -34,6 +34,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Sponsorship</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aaa39337-4784-461b-961a-0fdde846f051</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>856e1b1d-b8a2-4341-a361-e0e9f797f638</guid>

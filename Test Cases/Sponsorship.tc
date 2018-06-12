@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>1929b335-2d87-41b2-959b-7356e8a3a629</testCaseGuid>
+   <variable>
+      <defaultValue>'/sponsorship/content'</defaultValue>
+      <description></description>
+      <id>aaa39337-4784-461b-961a-0fdde846f051</id>
+      <masked>false</masked>
+      <name>sponsorUrl</name>
+   </variable>
 </TestCaseEntity>

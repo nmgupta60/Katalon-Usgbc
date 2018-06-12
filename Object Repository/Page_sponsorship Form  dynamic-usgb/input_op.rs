@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_Select01020304050607080</name>
+   <name>input_op</name>
    <tag></tag>
-   <elementGuidId>6376b06d-61a4-47bd-8702-8625f9d5cb25</elementGuidId>
+   <elementGuidId>f3cbe9b4-beb6-47ea-93f1-6d1234caf9f9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,55 +11,55 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>usgbc-form-input usgbc-form-field-select form-select</value>
+      <value>btn button button--primary js-form-submit form-submit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-drupal-selector</name>
       <type>Main</type>
-      <value>edit-cardexpiration-month</value>
+      <value>edit-submit</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>edit-cardexpiration-month</value>
+      <value>edit-submit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>cardexpiration_month</value>
+      <value>op</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-drupal-states</name>
+      <name>value</name>
       <type>Main</type>
-      <value>{&quot;visible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;card&quot;}},&quot;invisible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;check&quot;}}}</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Select010203040506070809101112</value>
+      <value>Continue</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;edit-cardexpiration-month&quot;)</value>
+      <value>id(&quot;edit-submit&quot;)</value>
    </webElementProperties>
 </WebElementEntity>

@@ -4,6 +4,7 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -18,58 +19,48 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import newPackage.SignIn
+import newPackage.payment
+import newPackage.sponsorDetails
+import main.XlsReader
 
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('http://test-dynamic-usgbc.pantheonsite.io/sponsorship/content')
+String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-WebUI.click(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_types'))
+XlsReader obj = new XlsReader(path)
+String email = obj.getCellData("SignIn", "Email", 2)
+String password = obj.getCellData("SignIn", "Password", 2)
 
-WebUI.setText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_amount'), '50')
-WebUI.takeScreenshot()
-WebUI.setText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line1'), '725 chestnut st')
+String communityName = obj.getCellData("Sponsorship", "newCommunityName", 2)
+String amount = obj.getCellData("Sponsorship","Amount", 2)
+String startDate = obj.getCellData("Sponsorship","StartDate", 2)
+String endDate = obj.getCellData("Sponsorship","EndDate", 2)
 
-WebUI.setText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line2'), 'west')
+String address1 = obj.getCellData("Sponsorship","Street1",2)
+String address2 = obj.getCellData("Sponsorship","Street2",2)
+String city = obj.getCellData("Sponsorship","City",2)
+String state = obj.getCellData("Sponsorship","StateCode",2)
+String zip = obj.getCellData("Sponsorship","Zip",2)
 
-WebUI.setText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_addresslocality'), 'erie')
+String cardholderName = obj.getCellData("Payment", "Name", 2)
+String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
+String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
+String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
+String cvv = obj.getCellData("Payment","SecurityCode", 2)
 
-WebUI.selectOptionByValue(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/select_- Select -AlabamaAlaska'), 
-    'PA', true)
-WebUI.verifyElementText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_addresslocality'), 'erie')
-WebUI.setText(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_addresspostal_code'), '16507')
+String billingAddress1 = obj.getCellData("Payment","Street1",2)
+String billingAddress2 = obj.getCellData("Payment","Street2",2)
+String billingCity = obj.getCellData("Payment","City",2)
+String billingState = obj.getCellData("Payment","State",2)
+String billingZip = obj.getCellData("Payment","Zip",2)
 
-WebUI.click(findTestObject('sponser/Page_sponsorship Form  dynamic-usgb/input_op'))
+WebUI.navigateToUrl(GlobalVariable.BaseUrl+sponsorUrl)
 
-WebUI.setText(findTestObject('sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), 'mallik@gmail.com')
+sponsorDetails.sponsrDetails(communityName, amount, startDate, endDate, address1,address2, city, state, zip)
 
-WebUI.setText(findTestObject('sponser/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), 'initpass')
+SignIn.getSignIn(email,password)
 
-WebUI.click(findTestObject('sponser/Page_Sign-in Page  dynamic-usgbc/input_op'))
+payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
 
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_name_on_card'), 'amex')
+payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
 
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_card_number'), '98318378758743287')
-
-WebUI.selectOptionByValue(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'), '11', 
-    true)
-
-WebUI.selectOptionByValue(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), '2022', 
-    true)
-
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_security_code'), '234')
-
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'), '725 chestnut st')
-
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l_1'), 'west')
-
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'), 'erie')
-
-WebUI.selectOptionByValue(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'), 'PA', 
-    true)
-
-WebUI.setText(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'), '16507')
-
-WebUI.click(findTestObject('sponser/Page_Payment Form  dynamic-usgbc/div_Payment type'))
-
-WebUI.closeBrowser()
 

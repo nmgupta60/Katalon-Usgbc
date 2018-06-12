@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>select_select20182019202020212</name>
+   <name>input_amount</name>
    <tag></tag>
-   <elementGuidId>2e4b9dde-9f9b-42b6-8296-023b07146ce6</elementGuidId>
+   <elementGuidId>2ee88c64-63b2-4fa0-be4f-46e4f5ade923</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,55 +11,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>select</value>
+      <value>input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>usgbc-form-input usgbc-form-field-select form-select</value>
+      <value>col-md-7 col-xs-12 usgbc-form-input form-text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-drupal-selector</name>
       <type>Main</type>
-      <value>edit-cardexpiration-year</value>
+      <value>edit-amount</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>edit-cardexpiration-year</value>
+      <value>edit-amount</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>cardexpiration_year</value>
+      <value>amount</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>data-drupal-states</name>
+      <name>size</name>
       <type>Main</type>
-      <value>{&quot;visible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;card&quot;}},&quot;invisible&quot;:{&quot;:input[name=\u0022payment_type\u0022]&quot;:{&quot;value&quot;:&quot;check&quot;}}}</value>
+      <value>60</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>maxlength</name>
+      <type>Main</type>
+      <value>128</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>placeholder</name>
       <type>Main</type>
-      <value>select20182019202020212022202320242025202620272028</value>
+      <value>Amount $</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;edit-cardexpiration-year&quot;)</value>
+      <value>id(&quot;edit-amount&quot;)</value>
    </webElementProperties>
 </WebElementEntity>
