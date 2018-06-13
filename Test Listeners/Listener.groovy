@@ -16,6 +16,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+import internal.GlobalVariable
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 
 import main.XlsReader
@@ -41,8 +44,10 @@ class Listener {
 		// String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 		
 		WebUI.openBrowser('')
-		
+		WebUI.navigateToUrl(GlobalVariable.BaseUrl)
 		WebUI.maximizeWindow()
+		
+		
 	}
 
 

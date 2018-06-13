@@ -62,7 +62,7 @@ public class membershipDetails {
 
 		WebUI.setText(findTestObject('Object Repository/Membership Registration/Page_Organization Membership Form/input_email'), email1)
 
-		WebUI.selectOptionByValue(findTestObject('Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'), category, true)
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'), category, false)
 
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a sub-categoryAr'),subCategory, false)
 

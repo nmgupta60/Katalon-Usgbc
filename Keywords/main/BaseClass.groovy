@@ -28,7 +28,7 @@ import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
 public class BaseClass {
-	
+
 	public static WebDriver driver;
 	public static XlsReader data;
 }

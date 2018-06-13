@@ -4,7 +4,7 @@
    <name>Smoke Test</name>
    <tag></tag>
    <isRerun>false</isRerun>
-   <lastRun>2018-06-07T15:46:12</lastRun>
+   <lastRun>2018-06-12T17:30:56</lastRun>
    <mailRecipient></mailRecipient>
    <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
@@ -12,27 +12,9 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>70c64569-f282-49ef-a430-70123ff49f55</testSuiteGuid>
    <testCaseLink>
-      <guid>fab57c5a-d30b-4c64-9310-77aa0c492bc3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Membership</testCaseId>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>27238050-6873-497b-869e-5aeb762e994e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b6949c68-2019-40ff-b910-3eed85d7a84e</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>f023a0d6-5f46-49f6-9650-262cd839cd68</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Sponsorship</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -44,7 +26,7 @@
    <testCaseLink>
       <guid>856e1b1d-b8a2-4341-a361-e0e9f797f638</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/DonationHiati</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -56,7 +38,7 @@
    <testCaseLink>
       <guid>696ba514-dc7b-4d56-b9c6-6374bc602ca6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/DonationGreenApple</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -68,7 +50,7 @@
    <testCaseLink>
       <guid>12455f28-25a5-47ab-8c34-1e2f8fbf6927</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/DonationUsgbc</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -123,6 +105,54 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>39841191-95c5-4d8b-a09f-602f9840e81e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0bffb940-9f01-4bb0-94ad-253628f0ff55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Communityregistration</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3cc19fbe-347f-4c80-a098-9549710b955b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3b9e341a-1e7f-44dc-a900-5620537b2a60</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ExamRegistration</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9d82bfa4-0e93-4d50-9724-2bb8af7a1af3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0897efb5-eb10-4591-8f58-57b78c88bd5c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fab57c5a-d30b-4c64-9310-77aa0c492bc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Membership</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>27238050-6873-497b-869e-5aeb762e994e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b6949c68-2019-40ff-b910-3eed85d7a84e</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

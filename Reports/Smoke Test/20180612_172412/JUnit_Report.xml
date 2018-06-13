@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Smoke Test" time="144" tests="6" failures="2" errors="0">
+   <testsuite name="Smoke Test" tests="6" failures="2" errors="0" time="144" timestamp="2018-06-12 17:24:20" hostname="ARJUN - ARJUNS" id="Test Suites/Smoke Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412"/>
+         <property name="logFiles" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412\\1528838787984.png, C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412\\1528838803769.png"/>
+         <property name="hostName" value="ARJUN - ARJUNS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 66.0.3359.181"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="dbde3ca61077df96f64f940da735045f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Sponsorship" classname="Test Cases/Sponsorship" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:24:20 - [TEST_CASE][PASSED] - Test Cases/Sponsorship: Test Cases/Sponsorship
+
+2018-06-12 17:24:21 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:24:21 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:24:21 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:24:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:24:25 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:24:26 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:24:26 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:24:27 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:24:28 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:24:28 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - communityName = obj.getCellData("Sponsorship", "newCommunityName", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - amount = obj.getCellData("Sponsorship", "Amount", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - startDate = obj.getCellData("Sponsorship", "StartDate", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - endDate = obj.getCellData("Sponsorship", "EndDate", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("Sponsorship", "Street1", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("Sponsorship", "Street2", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("Sponsorship", "City", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("Sponsorship", "StateCode", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("Sponsorship", "Zip", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:24:30 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:24:31 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//sponsorship/content' successfully
+
+2018-06-12 17:24:32 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//sponsorship/content' successfully
+
+2018-06-12 17:24:32 - [TEST_STEP][PASSED] - Statement - newPackage.sponsorDetails.sponsrDetails(communityName, amount, startDate, endDate, address1, address2, city, state, zip): Object: 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_op' is clicked on
+
+2018-06-12 17:24:32 - [MESSAGE][PASSED] - All options with label 'USGBC West Virginia' are selected in object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/select_USGBC Northern Californ' 
+
+2018-06-12 17:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_types' is clicked on
+
+2018-06-12 17:24:33 - [MESSAGE][PASSED] - Text '1000' is set on object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_amount'
+
+2018-06-12 17:24:33 - [MESSAGE][PASSED] - Keys '12-01-2019' sent to object: 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_start_date'
+
+2018-06-12 17:24:33 - [MESSAGE][PASSED] - Keys '12-10-2020' sent to object: 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_end_date'
+
+2018-06-12 17:24:33 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line1'
+
+2018-06-12 17:24:33 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_addressaddress_line2'
+
+2018-06-12 17:24:34 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_addresslocality'
+
+2018-06-12 17:24:35 - [MESSAGE][PASSED] - All options with value 'AL' are selected in object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:24:35 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_addresspostal_code'
+
+2018-06-12 17:24:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Sponsorship/Page_sponsorship Form  dynamic-usgb/input_op' is clicked on
+
+2018-06-12 17:24:36 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:24:36 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-12 17:24:37 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-12 17:24:39 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:24:39 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:24:39 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:24:39 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:24:40 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:24:40 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:24:40 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:24:40 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:24:41 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:24:41 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:24:41 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:24:42 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:24:43 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:24:43 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DonationHiati" classname="Test Cases/DonationHiati" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:24:43 - [TEST_CASE][PASSED] - Test Cases/DonationHiati: Test Cases/DonationHiati
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:24:43 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:24:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:24:46 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:24:47 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:24:47 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:24:48 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - amount = obj.getCellData("Donation", "Amount", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - donarName = obj.getCellData("Donation", "donarName", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - dedicatedTo = obj.getCellData("Donation", "DedicatedTo", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("Donation", "Email", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:24:49 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/haiti' successfully
+
+2018-06-12 17:24:50 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/haiti' successfully
+
+2018-06-12 17:24:50 - [TEST_STEP][PASSED] - Statement - newPackage.Donation.donationHaiti(amount, donarName, dedicatedTo, email): Object: 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:24:50 - [MESSAGE][PASSED] - All options with value '$50' are selected in object 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/select_2550100other' 
+
+2018-06-12 17:24:50 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_donor_name'
+
+2018-06-12 17:24:51 - [MESSAGE][PASSED] - Text 'Group10' is set on object 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_dedication_to_name'
+
+2018-06-12 17:24:51 - [MESSAGE][PASSED] - Text 'gupta@gmail.com' is set on object 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_dedication_to_email'
+
+2018-06-12 17:24:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:24:54 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:24:54 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:24:54 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:24:55 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:24:55 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:24:55 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:24:55 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:24:56 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:24:56 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:24:56 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:24:57 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:24:57 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:24:57 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:24:57 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:24:57 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:24:58 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DonationGreenApple" classname="Test Cases/DonationGreenApple" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:24:58 - [TEST_CASE][PASSED] - Test Cases/DonationGreenApple: Test Cases/DonationGreenApple
+
+2018-06-12 17:24:58 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:24:58 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:24:58 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:25:00 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:25:00 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:02 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:02 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:25:03 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:25:03 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:25:03 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - amount = obj.getCellData("Donation", "Amount", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - donarName = obj.getCellData("Donation", "donarName", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - dedicatedTo = obj.getCellData("Donation", "DedicatedTo", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("Donation", "Email", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:25:04 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/mygreenapple' successfully
+
+2018-06-12 17:25:05 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/mygreenapple' successfully
+
+2018-06-12 17:25:05 - [TEST_STEP][PASSED] - Statement - newPackage.Donation.donationGreenApple(amount, donarName, dedicatedTo, email): Object: 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:25:05 - [MESSAGE][PASSED] - All options with value '$50' are selected in object 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/select_2550100other' 
+
+2018-06-12 17:25:05 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_donor_name'
+
+2018-06-12 17:25:05 - [MESSAGE][PASSED] - Text 'Group10' is set on object 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_name'
+
+2018-06-12 17:25:05 - [MESSAGE][PASSED] - Text 'gupta@gmail.com' is set on object 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_email'
+
+2018-06-12 17:25:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:25:08 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:08 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:25:08 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:25:09 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:25:09 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:25:10 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:10 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:25:10 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:25:10 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:25:10 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:25:12 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:25:12 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:25:12 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:25:12 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:25:12 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:25:13 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/DonationUsgbc" classname="Test Cases/DonationUsgbc" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:25:13 - [TEST_CASE][PASSED] - Test Cases/DonationUsgbc: Test Cases/DonationUsgbc
+
+2018-06-12 17:25:13 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:25:13 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:25:13 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:25:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:25:15 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:16 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:16 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:25:17 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - amount = obj.getCellData("Donation", "Amount", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - donarName = obj.getCellData("Donation", "donarName", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - dedicatedTo = obj.getCellData("Donation", "DedicatedTo", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("Donation", "Email", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:25:18 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/usgbc' successfully
+
+2018-06-12 17:25:19 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//donations/center/online/usgbc' successfully
+
+2018-06-12 17:25:19 - [TEST_STEP][PASSED] - Statement - newPackage.Donation.DonationUsgbc(amount, donarName, dedicatedTo, email): Object: 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:25:19 - [MESSAGE][PASSED] - All options with value '$50' are selected in object 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/select_2550100other' 
+
+2018-06-12 17:25:19 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_donor_name'
+
+2018-06-12 17:25:20 - [MESSAGE][PASSED] - Text 'Group10' is set on object 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_name'
+
+2018-06-12 17:25:20 - [MESSAGE][PASSED] - Text 'gupta@gmail.com' is set on object 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_email'
+
+2018-06-12 17:25:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_op' is clicked on
+
+2018-06-12 17:25:22 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:22 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:25:22 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:25:23 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:25:23 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:25:23 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:23 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:25:24 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:25:24 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:25:24 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:25:26 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:25:26 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:25:26 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:25:26 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:25:26 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:25:26 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Store" classname="Test Cases/Store" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:25:27 - [TEST_CASE][PASSED] - Test Cases/Store: Test Cases/Store
+
+2018-06-12 17:25:27 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:25:27 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:25:27 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:25:29 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:25:29 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:30 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:25:30 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:25:31 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("Store", "Street1", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("Store", "Street2", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("Store", "City", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("Store", "StateCode", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("Store", "Zip", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:25:32 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//store' successfully
+
+2018-06-12 17:25:33 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//store' successfully
+
+2018-06-12 17:25:33 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0' is clicked on
+
+2018-06-12 17:25:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC store  dynamic-usgbc/div_Green Apple Lapel Pins30.0' is clicked on
+
+2018-06-12 17:25:34 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op' is clicked on
+
+2018-06-12 17:25:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_Green Apple Lapel Pins  dynami/input_op' is clicked on
+
+2018-06-12 17:25:36 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout' is clicked on
+
+2018-06-12 17:25:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout' is clicked on
+
+2018-06-12 17:25:38 - [TEST_STEP][PASSED] - Statement - newPackage.storeDetails.storeContact(address1, address2, city, state, zip): Delayed 3 second(s)
+
+2018-06-12 17:25:38 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line1'
+
+2018-06-12 17:25:39 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line2'
+
+2018-06-12 17:25:39 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresslocality'
+
+2018-06-12 17:25:40 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:25:40 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addresspostal_code'
+
+2018-06-12 17:25:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2018-06-12 17:25:43 - [TEST_STEP][PASSED] - selectOptionByValue: All options with value 'GROUND_HOME_DELIVERY' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio' 
+
+2018-06-12 17:25:44 - [MESSAGE][PASSED] - All options with value 'GROUND_HOME_DELIVERY' are selected in object 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio' 
+
+2018-06-12 17:25:44 - [TEST_STEP][PASSED] - delay: Delayed 8 second(s)
+
+2018-06-12 17:25:52 - [MESSAGE][PASSED] - Delayed 8 second(s)
+
+2018-06-12 17:25:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2' is clicked on
+
+2018-06-12 17:25:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_how_did_you_hear2' is clicked on
+
+2018-06-12 17:25:52 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)' is clicked on
+
+2018-06-12 17:25:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)' is clicked on
+
+2018-06-12 17:25:53 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:25:53 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-12 17:25:54 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-12 17:25:56 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:25:56 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:56 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:25:56 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:25:57 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:25:57 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:25:58 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:25:58 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:25:58 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:25:58 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:25:58 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:25:59 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:26:00 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:26:00 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Communityregistration" classname="Test Cases/Communityregistration" status="PASSED">
+         <system-out><![CDATA[2018-06-12 17:26:00 - [TEST_CASE][PASSED] - Test Cases/Communityregistration: Test Cases/Communityregistration
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:26:00 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:26:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:26:03 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:05 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:05 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:26:07 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - communityName = obj.getCellData("CommunityRegistration", "NewCommunityName", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - attentionTo = obj.getCellData("CommunityRegistration", "AttentionTo", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - company = obj.getCellData("CommunityRegistration", "Company", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("CommunityRegistration", "Street1", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("CommunityRegistration", "Street2", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("CommunityRegistration", "City", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("CommunityRegistration", "StateCode", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("CommunityRegistration", "Zip", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:26:07 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//community/registration' successfully
+
+2018-06-12 17:26:09 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//community/registration' successfully
+
+2018-06-12 17:26:09 - [TEST_STEP][PASSED] - Statement - newPackage.communityRegistrationDetails.communityDetails(communityName, attentionTo, company, address1, address2, city, state, zip): Object: 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:09 - [MESSAGE][PASSED] - All options with label 'USGBC North Carolina' are selected in object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/select_USGBC Northern Californ'  using regular expression
+
+2018-06-12 17:26:09 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_attention_to'
+
+2018-06-12 17:26:09 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_company'
+
+2018-06-12 17:26:10 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_addressaddress_line1'
+
+2018-06-12 17:26:10 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_addressaddress_line2'
+
+2018-06-12 17:26:11 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_addresslocality'
+
+2018-06-12 17:26:11 - [MESSAGE][PASSED] - All options with value 'AL' are selected in object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:26:12 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_addresspostal_code'
+
+2018-06-12 17:26:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_how_did_you_hear1' is clicked on
+
+2018-06-12 17:26:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_terms' is clicked on
+
+2018-06-12 17:26:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Community Registration/Page_Community Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:13 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:13 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-12 17:26:14 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-12 17:26:15 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:15 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip): Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:26:16 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'
+
+2018-06-12 17:26:16 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_ll'
+
+2018-06-12 17:26:16 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresslocality'
+
+2018-06-12 17:26:18 - [MESSAGE][PASSED] - All options with value 'PA' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:26:18 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_billing_addresspostal_co'
+
+2018-06-12 17:26:18 - [TEST_STEP][PASSED] - Statement - newPackage.payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv): Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:26:18 - [MESSAGE][PASSED] - Text 'AMEX' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'
+
+2018-06-12 17:26:18 - [MESSAGE][PASSED] - Text '371449635392376' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_card_number'
+
+2018-06-12 17:26:19 - [MESSAGE][PASSED] - All options with value '11' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'  using regular expression
+
+2018-06-12 17:26:19 - [MESSAGE][PASSED] - All options with value '2028' are selected in object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'  using regular expression
+
+2018-06-12 17:26:19 - [MESSAGE][PASSED] - Text '9997' is set on object 'Object Repository/payment/Page_Payment Form  dynamic-usgbc/input_security_code'
+
+2018-06-12 17:26:19 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:26:19 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:26:19 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:26:20 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ExamRegistration" classname="Test Cases/ExamRegistration" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element &lt;input class=&quot;col-md-1 col-xs-1 form-checkbox&quot; data-drupal-selector=&quot;edit-accomodation&quot; type=&quot;checkbox&quot; id=&quot;edit-accomodation&quot; name=&quot;accomodation&quot; value=&quot;1&quot;> is not clickable at point (135, 574). Other element would receive the click: &lt;div class=&quot;usgbc-container-inner-box&quot;>...&lt;/div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)"/>
+         <system-out><![CDATA[2018-06-12 17:26:20 - [TEST_CASE][FAILED] - Test Cases/ExamRegistration: Test Cases/ExamRegistration FAILED because (of) Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)
+
+2018-06-12 17:26:20 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:26:20 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:26:20 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:26:22 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:26:22 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:24 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:24 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:26:25 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:26:25 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:26:25 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - examType = obj.getCellData("ExamRegistration", "ExamType", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - language = obj.getCellData("ExamRegistration", "Language", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("ExamRegistration", "Street1", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("ExamRegistration", "Street2", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("ExamRegistration", "City", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("ExamRegistration", "StateCode", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("ExamRegistration", "Zip", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - dob = obj.getCellData("ExamRegistration", "DOB", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - jobTitle = obj.getCellData("ExamRegistration", "JobTitle", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - organization = obj.getCellData("ExamRegistration", "Organization", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:26:26 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//register-exams/exam' successfully
+
+2018-06-12 17:26:27 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//register-exams/exam' successfully
+
+2018-06-12 17:26:27 - [TEST_STEP][FAILED] - Statement - newPackage.ExamRegistrationDetails.examInfo(examType, language): Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)
+
+2018-06-12 17:26:27 - [MESSAGE][PASSED] - All options with label 'LEED AP Homes Exam' are selected in object 'Object Repository/Register Exams/Page_Exam types and information For/select_LEED AP BDC ExamLEED AP' 
+
+2018-06-12 17:26:27 - [MESSAGE][PASSED] - All options with label 'English' are selected in object 'Object Repository/Register Exams/Page_Exam types and information For/select_- Select Language -Engl' 
+
+2018-06-12 17:26:28 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)
+[[ATTACHMENT|C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412\\1528838787984.png]]
+
+2018-06-12 17:26:28 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:26:28 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:26:28 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:26:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-12 17:26:20 - [TEST_CASE][FAILED] - Test Cases/ExamRegistration: Test Cases/ExamRegistration FAILED because (of) Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Membership" classname="Test Cases/Membership" status="FAILED">
+         <failure type="FAILED" message="Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)"/>
+         <system-out><![CDATA[2018-06-12 17:26:29 - [TEST_CASE][FAILED] - Test Cases/Membership: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-12 17:26:29 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-12 17:26:29 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-12 17:26:29 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-12 17:26:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-12 17:26:31 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:32 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-12 17:26:32 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-12 17:26:33 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - attentionTo = obj.getCellData("MembershipContact", "AttentionTo", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - company = obj.getCellData("MembershipContact", "Company", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("MembershipContact", "Street1", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("MembershipContact", "Street2", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("MembershipContact", "City", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("MembershipContact", "StateCode", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("MembershipContact", "Zip", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - term = obj.getCellData("MembershipContact", "Term", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - organizationName = obj.getCellData("MembershipContact", "OrganizationName", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - website = obj.getCellData("MembershipContact", "Website", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - email1 = obj.getCellData("MembershipContact", "Email", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - category = obj.getCellData("MembershipContact", "IndustryCategory", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - subCategory = obj.getCellData("MembershipContact", "SubCategory", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - revenue = obj.getCellData("MembershipContact", "Revenue", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-12 17:26:34 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//membership/contact' successfully
+
+2018-06-12 17:26:35 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//membership/contact' successfully
+
+2018-06-12 17:26:35 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-06-12 17:26:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-06-12 17:26:36 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:36 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-12 17:26:36 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-12 17:26:38 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:38 - [TEST_STEP][PASSED] - Statement - newPackage.membershipDetails.personalMailingDetails(attentionTo, company, address1, address2, city, state, zip): Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:38 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_attention_to'
+
+2018-06-12 17:26:38 - [MESSAGE][PASSED] - Text 'Promantus' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_company'
+
+2018-06-12 17:26:38 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addressaddress_line1'
+
+2018-06-12 17:26:39 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addressaddress_line2'
+
+2018-06-12 17:26:39 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addresslocality'
+
+2018-06-12 17:26:40 - [MESSAGE][PASSED] - All options with value 'AL' are selected in object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-12 17:26:40 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addresspostal_code'
+
+2018-06-12 17:26:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_terms' is clicked on
+
+2018-06-12 17:26:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-12 17:26:42 - [TEST_STEP][FAILED] - Statement - newPackage.membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue): Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-12 17:26:42 - [MESSAGE][PASSED] - All options with value '2 years' are selected in object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_1 year2 years3 years' 
+
+2018-06-12 17:26:42 - [MESSAGE][PASSED] - Text 'Test Organization 598892' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_org_name'
+
+2018-06-12 17:26:43 - [MESSAGE][PASSED] - Text 'www.promantus.com' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_website'
+
+2018-06-12 17:26:43 - [MESSAGE][PASSED] - Text 'info@mallik.com' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_email'
+
+2018-06-12 17:26:44 - [MESSAGE][FAILED] - Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+[[ATTACHMENT|C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Smoke Test\\20180612_172412\\1528838803769.png]]
+
+2018-06-12 17:26:44 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-12 17:26:44 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-12 17:26:44 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-12 17:26:44 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-12 17:26:29 - [TEST_CASE][FAILED] - Test Cases/Membership: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-12 17:24:20 - [TEST_SUITE][FAILED] - Smoke Test: Test Cases/ExamRegistration FAILED because (of) Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)]]></system-out>
+      <system-err><![CDATA[2018-06-12 17:24:20 - [TEST_SUITE][FAILED] - Smoke Test: Test Cases/ExamRegistration FAILED because (of) Unable to click on object 'Object Repository/Register Exams/Page_Exam types and information For/input_accomodation' (Root cause: org.openqa.selenium.WebDriverException: unknown error: Element <input class="col-md-1 col-xs-1 form-checkbox" data-drupal-selector="edit-accomodation" type="checkbox" id="edit-accomodation" name="accomodation" value="1"> is not clickable at point (135, 574). Other element would receive the click: <div class="usgbc-container-inner-box">...</div>
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\ARJUN\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 5b88332315c07494f72d3ab5d1b43d74)]]></system-err>
+   </testsuite>
+</testsuites>

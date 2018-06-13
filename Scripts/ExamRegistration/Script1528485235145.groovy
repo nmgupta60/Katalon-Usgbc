@@ -59,7 +59,7 @@ String billingState = obj.getCellData("Payment","State",2)
 String billingZip = obj.getCellData("Payment","Zip",2)
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+examRegistrationUrl)
-
+WebUI.delay(2)
 ExamRegistrationDetails.examInfo(examType, language)
 
 SignIn.getSignIn(email, password)
