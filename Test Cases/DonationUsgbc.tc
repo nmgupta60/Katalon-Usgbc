@@ -12,4 +12,25 @@
       <masked>false</masked>
       <name>DonationUsgbcUrl</name>
    </variable>
+   <variable>
+      <defaultValue>'Donation'</defaultValue>
+      <description></description>
+      <id>0658c527-479e-417b-91f2-087a3c86e766</id>
+      <masked>false</masked>
+      <name>donationSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>28bfbc86-e0da-4676-8ab7-499c4f111852</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>26d49b6b-fe09-477e-994f-89b5d34839ef</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

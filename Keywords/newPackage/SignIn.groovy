@@ -19,7 +19,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
-
+import main.BaseClass
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 
@@ -42,7 +42,7 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
-class SignIn {
+class SignIn extends BaseClass {
 	/**
 	 * Refresh browser
 	 */
@@ -86,13 +86,15 @@ class SignIn {
 	}
 
 	@Keyword
-	def public static void getSignIn(String Email, String Password) {
+	def  getSignIn(String sheetName,int rowNum) {
 		//		ExcelData myData = (ExcelData) findTestData("Test Data")
 		//		myData.changeSheet("SignIn")
+		String email = obj.getCellData(sheetName, "Email", rowNum)
+		String password = obj.getCellData(sheetName, "Password", rowNum)
 
-		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), Email )
+		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'), email )
 
-		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), Password)
+		WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'), password)
 
 		WebUI.click(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op'))
 

@@ -19,4 +19,32 @@
       <masked>false</masked>
       <name>clickSignIn</name>
    </variable>
+   <variable>
+      <defaultValue>'SignIn'</defaultValue>
+      <description></description>
+      <id>d62b566f-5358-41de-bbac-3b2677db435a</id>
+      <masked>false</masked>
+      <name>signInSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'MembershipContact'</defaultValue>
+      <description></description>
+      <id>f99037c6-3091-40df-9285-52af4a4182aa</id>
+      <masked>false</masked>
+      <name>membershipSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>256a9025-5c84-440b-bac6-76181ef5a90c</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>8f90b645-fc9c-4865-b719-82afa202bb2b</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

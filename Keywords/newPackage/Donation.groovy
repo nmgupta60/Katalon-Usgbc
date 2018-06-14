@@ -20,52 +20,64 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
-
+import main.BaseClass
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
-public class Donation {
-	
+public class Donation extends BaseClass {
+
 	@Keyword
-	def public static void donationGreenApple(String amount,String donarName,String dedictedTo,String email){
-		
+	def  donationGreenApple(String sheetName,int rowNum){
+		String amount = obj.getCellData(sheetName,"Amount", rowNum)
+		String donarName = obj.getCellData(sheetName,"donarName", rowNum)
+		String dedicatedTo = obj.getCellData(sheetName,"DedicatedTo", rowNum)
+		String email = obj.getCellData(sheetName,"Email", rowNum)
+
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/select_2550100other'),amount , false)
-		
+
 		WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_donor_name'), donarName)
-		
-		WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedictedTo)
-		
+
+		WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedicatedTo)
+
 		WebUI.setText(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_dedication_to_email'),email)
-		
+
 		WebUI.click(findTestObject('Object Repository/Donation GreenApple/Page_Pay by online Donation Form  d/input_op'))
 	}
-	
+
 	@Keyword
-	def public static void donationHaiti(String amount,String donarName,String dedictedTo,String email){
-		
+	def  donationHaiti(String sheetName,int rowNum){
+		String amount = obj.getCellData(sheetName,"Amount", rowNum)
+		String donarName = obj.getCellData(sheetName,"donarName", rowNum)
+		String dedicatedTo = obj.getCellData(sheetName,"DedicatedTo", rowNum)
+		String email = obj.getCellData(sheetName,"Email", rowNum)
+
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/select_2550100other'), amount, false)
-		
+
 		WebUI.setText(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_donor_name'), donarName)
-		
-		WebUI.setText(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedictedTo)
-		
+
+		WebUI.setText(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedicatedTo)
+
 		WebUI.setText(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_dedication_to_email'),email)
-		
+
 		WebUI.click(findTestObject('Object Repository/Donation Haiti/Page_Pay by online Donation Form  d/input_op'))
 	}
-	
+
 	@Keyword
-	def public static void DonationUsgbc(String amount,String donarName,String dedictedTo,String email){
-		
+	def  DonationUsgbc(String sheetName,int rowNum){
+		String amount = obj.getCellData(sheetName,"Amount", rowNum)
+		String donarName = obj.getCellData(sheetName,"donarName", rowNum)
+		String dedicatedTo = obj.getCellData(sheetName,"DedicatedTo", rowNum)
+		String email = obj.getCellData(sheetName,"Email", rowNum)
+
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/select_2550100other'), amount, false)
-		
+
 		WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_donor_name'),donarName)
-		
-		WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedictedTo)
-		
+
+		WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_name'), dedicatedTo)
+
 		WebUI.setText(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_dedication_to_email'),email)
-		
+
 		WebUI.click(findTestObject('Object Repository/Donation Usgbc/Page_Pay by online Donation Form  d/input_op'))
 	}
 }

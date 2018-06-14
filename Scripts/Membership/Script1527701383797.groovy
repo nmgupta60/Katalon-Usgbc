@@ -25,51 +25,21 @@ import newPackage.membershipDetails
 import main.XlsReader
 import newPackage.payment
 
-String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-XlsReader obj = new XlsReader(path)
-String email = obj.getCellData("SignIn", "Email", 2)
-String password = obj.getCellData("SignIn", "Password", 2)
 
-String attentionTo = obj.getCellData("MembershipContact","AttentionTo", 2)
-String company = obj.getCellData("MembershipContact","Company", 2)
-String address1 = obj.getCellData("MembershipContact","Street1",2)
-String address2 = obj.getCellData("MembershipContact","Street2",2)
-String city = obj.getCellData("MembershipContact","City",2)
-String state = obj.getCellData("MembershipContact","StateCode",2)
-String zip = obj.getCellData("MembershipContact","Zip",2)
 
-String term = obj.getCellData("MembershipContact","Term",2)
-String organizationName = obj.getCellData("MembershipContact","OrganizationName",2)
-String website = obj.getCellData("MembershipContact","Website",2)
-String email1 = obj.getCellData("MembershipContact","Email",2)
-String category = obj.getCellData("MembershipContact","IndustryCategory",2)
-String subCategory = obj.getCellData("MembershipContact","SubCategory",2)
-String revenue = obj.getCellData("MembershipContact","Revenue",2)
-
-String cardholderName = obj.getCellData("Payment", "Name", 2)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
-String cvv = obj.getCellData("Payment","SecurityCode", 2)
-
-String billingAddress1 = obj.getCellData("Payment","Street1",2)
-String billingAddress2 = obj.getCellData("Payment","Street2",2)
-String billingCity = obj.getCellData("Payment","City",2)
-String billingState = obj.getCellData("Payment","State",2)
-String billingZip = obj.getCellData("Payment","Zip",2)
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+membershipUrl)
 
 WebUI.click(clickSignIn)
 
-SignIn.getSignIn(email, password)
+CustomKeywords.'newPackage.SignIn.getSignIn'(signInSheet, rowNum)
 
-membershipDetails.personalMailingDetails(attentionTo, company,address1, address2, city, state, zip)
+CustomKeywords.'newPackage.membershipDetails.personalMailingDetails'()
 
-membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue)
+CustomKeywords.'newPackage.membershipDetails.organizationalDetails'()
 
-payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
+CustomKeywords.'newPackage.payment.getPayment'(paymentSheet, rowNum)
 
-payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
+CustomKeywords.'newPackage.payment.getBillingDetails'(paymentSheet, rowNum)
 

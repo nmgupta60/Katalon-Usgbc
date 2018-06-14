@@ -19,4 +19,32 @@
       <masked>false</masked>
       <name>exampageContinue</name>
    </variable>
+   <variable>
+      <defaultValue>'ExamRegistration'</defaultValue>
+      <description></description>
+      <id>1d988fb4-f0f6-47fd-a2d9-92b1da0daad6</id>
+      <masked>false</masked>
+      <name>examSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'SignIn'</defaultValue>
+      <description></description>
+      <id>af8acf47-8912-4249-8cb9-e36382b318f0</id>
+      <masked>false</masked>
+      <name>signInSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>2f754b60-ad67-4d86-99c1-978d0cf30e34</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>befcdf98-dc06-4772-8e7c-7a74a9535eac</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

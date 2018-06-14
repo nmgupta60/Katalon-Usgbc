@@ -12,4 +12,32 @@
       <masked>false</masked>
       <name>sponsorUrl</name>
    </variable>
+   <variable>
+      <defaultValue>'SignIn'</defaultValue>
+      <description></description>
+      <id>7100a1fa-aa94-4e04-8000-60999393970e</id>
+      <masked>false</masked>
+      <name>signInSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sponsorship'</defaultValue>
+      <description></description>
+      <id>1e8a9537-5d67-4669-b66e-6d2bd8fa6eab</id>
+      <masked>false</masked>
+      <name>sponsorSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>631ad956-5077-4e56-88e1-f5e53d8e74ae</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>a33f9008-1845-4d95-8609-a8e07ae4dd40</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

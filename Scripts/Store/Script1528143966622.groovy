@@ -33,29 +33,8 @@ import main.XlsReader
 import internal.GlobalVariable
 
 
-String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-XlsReader obj = new XlsReader(path)
-String email = obj.getCellData("SignIn", "Email", 2)
-String password = obj.getCellData("SignIn", "Password", 2)
 
-String address1 = obj.getCellData("Store","Street1",2)
-String address2 = obj.getCellData("Store","Street2",2)
-String city = obj.getCellData("Store","City",2)
-String state = obj.getCellData("Store","StateCode",2)
-String zip = obj.getCellData("Store","Zip",2)
-
-String cardholderName = obj.getCellData("Payment", "Name", 2)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
-String cvv = obj.getCellData("Payment","SecurityCode", 2)
-
-String billingAddress1 = obj.getCellData("Payment","Street1",2)
-String billingAddress2 = obj.getCellData("Payment","Street2",2)
-String billingCity = obj.getCellData("Payment","City",2)
-String billingState = obj.getCellData("Payment","State",2)
-String billingZip = obj.getCellData("Payment","Zip",2)
 
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+store)
@@ -68,8 +47,7 @@ WebUI.click(GreenApplePins)
 WebUI.click(AddCart)
 //WebUI.click(findTestObject('Object Repository/Store/Page_Shopping cart  dynamic-usgbc/a_Checkout'))
 WebUI.click(Checkout)
-storeDetails.storeContact(address1, address2, city, state, zip)
-
+CustomKeywords.'newPackage.storeDetails.storeContact'(storeSheet, rowNum)
 //WebUI.selectOptionByValue(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/select_Select a shipping optio'),'GROUND_HOME_DELIVERY', true)
 WebUI.selectOptionByValue(ShipServiceType, 'GROUND_HOME_DELIVERY', false)
 WebUI.delay(8)
@@ -79,18 +57,15 @@ WebUI.click(SelectEmail)
 //WebUI.click(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_op (1)'))
 WebUI.click(StorePageContinue)
 //myData.changeSheet("SignIn")
-SignIn.getSignIn(email, password)
-
+CustomKeywords.'newPackage.SignIn.getSignIn'(signInSheet, rowNum)
 //WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'),  myData.getValue(6,1))
 
 //WebUI.setText(findTestObject('Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'),myData.getValue(7,1))
 //def obj = new SignIn()
 //obj.getSignIn()
 //(new SignIn()).getSignIn()
-payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
-
-payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
-
+CustomKeywords.'newPackage.payment.getPayment'(paymentSheet, rowNum)
+CustomKeywords.'newPackage.payment.getBillingDetails'(paymentSheet, rowNum)
 //CustomKeywords.'newPackage.SignIn.getSignIn'('arjun@gmail.com', 'initpass')
 
 //CustomKeywords.'newPackage.payment.getPayment'(371449635392376, 'Amex', 11, 2028, 9997)

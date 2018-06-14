@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -29,6 +30,10 @@ import WebUiBuiltInKeywords as WebUI
 
 public class BaseClass {
 
-	public static WebDriver driver;
-	public static XlsReader data;
+	//	public static WebDriver driver;
+	//	public static XlsReader data;
+
+	String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
+
+	XlsReader obj = new XlsReader(path)
 }

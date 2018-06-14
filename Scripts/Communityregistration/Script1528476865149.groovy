@@ -28,42 +28,16 @@ import main.XlsReader
 import internal.GlobalVariable
 
 
-String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
-
-XlsReader obj = new XlsReader(path)
-String email = obj.getCellData("SignIn", "Email", 2)
-String password = obj.getCellData("SignIn", "Password", 2)
-
-String communityName = obj.getCellData("CommunityRegistration", "NewCommunityName", 2)
-String attentionTo = obj.getCellData("CommunityRegistration","AttentionTo", 2)
-String company = obj.getCellData("CommunityRegistration","Company", 2)
-String address1 = obj.getCellData("CommunityRegistration","Street1",2)
-String address2 = obj.getCellData("CommunityRegistration","Street2",2)
-String city = obj.getCellData("CommunityRegistration","City",2)
-String state = obj.getCellData("CommunityRegistration","StateCode",2)
-String zip = obj.getCellData("CommunityRegistration","Zip",2)
-
-String cardholderName = obj.getCellData("Payment", "Name", 2)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
-String cvv = obj.getCellData("Payment","SecurityCode", 2)
-
-String billingAddress1 = obj.getCellData("Payment","Street1",2)
-String billingAddress2 = obj.getCellData("Payment","Street2",2)
-String billingCity = obj.getCellData("Payment","City",2)
-String billingState = obj.getCellData("Payment","State",2)
-String billingZip = obj.getCellData("Payment","Zip",2)
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+membershipUrl)
+//WebUI.verifyCheckpoint(findCheckpoint('Checkpoints/Checkpoint'), false)
 
-communityRegistrationDetails.communityDetails(communityName, attentionTo, company, address1, address2, city, state, zip)
+CustomKeywords.'newPackage.communityRegistrationDetails.communityDetails'(communitySheetName, rowNum)
 
-SignIn.getSignIn(email, password)
+CustomKeywords.'newPackage.SignIn.getSignIn'(signInSheet, rowNum)
 
-payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
+CustomKeywords.'newPackage.payment.getPayment'(paymentSheet, rowNum)
 
-payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
-
+CustomKeywords.'newPackage.payment.getBillingDetails'(paymentSheet, rowNum)
 
 

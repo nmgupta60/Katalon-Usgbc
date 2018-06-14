@@ -12,4 +12,25 @@
       <masked>false</masked>
       <name>DonationGreenAppleUrl</name>
    </variable>
+   <variable>
+      <defaultValue>'Donation'</defaultValue>
+      <description></description>
+      <id>f7955a83-5207-48f6-8b1b-17315922d353</id>
+      <masked>false</masked>
+      <name>donationSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>68fa6faa-b9fc-40df-9a35-351593cb5ea7</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>9ba2662b-4e56-412d-89e3-a7e913782a1d</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

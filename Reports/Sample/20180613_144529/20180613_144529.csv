@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Sample,Chrome 66.0.3359.181,,2018-06-13 14:45:36,2018-06-13 14:46:01,25.324s,FAILED
+,,,,,,
+Test Cases/Membership,Chrome 66.0.3359.181,,2018-06-13 14:45:36,2018-06-13 14:46:01,24.430s,FAILED
+Start listener action : BeforeTestCase,Chrome 66.0.3359.181,,2018-06-13 14:45:37,2018-06-13 14:45:43,6.516s,PASSED
+"Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + ""\DynamicUsgbc.xlsx""",Chrome 66.0.3359.181,,2018-06-13 14:45:44,2018-06-13 14:45:44,0.017s,PASSED
+Statement - obj = new main.XlsReader(path),Chrome 66.0.3359.181,,2018-06-13 14:45:44,2018-06-13 14:45:45,1.495s,PASSED
+"Statement - email = obj.getCellData(""SignIn"", ""Email"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:45,2018-06-13 14:45:46,0.106s,PASSED
+"Statement - password = obj.getCellData(""SignIn"", ""Password"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.013s,PASSED
+"Statement - attentionTo = obj.getCellData(""MembershipContact"", ""AttentionTo"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.013s,PASSED
+"Statement - company = obj.getCellData(""MembershipContact"", ""Company"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.016s,PASSED
+"Statement - address1 = obj.getCellData(""MembershipContact"", ""Street1"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.067s,PASSED
+"Statement - address2 = obj.getCellData(""MembershipContact"", ""Street2"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.007s,PASSED
+"Statement - city = obj.getCellData(""MembershipContact"", ""City"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.002s,PASSED
+"Statement - state = obj.getCellData(""MembershipContact"", ""StateCode"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - zip = obj.getCellData(""MembershipContact"", ""Zip"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.016s,PASSED
+"Statement - term = obj.getCellData(""MembershipContact"", ""Term"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - organizationName = obj.getCellData(""MembershipContact"", ""OrganizationName"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - website = obj.getCellData(""MembershipContact"", ""Website"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - email1 = obj.getCellData(""MembershipContact"", ""Email"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.031s,PASSED
+"Statement - category = obj.getCellData(""MembershipContact"", ""IndustryCategory"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.009s,PASSED
+"Statement - subCategory = obj.getCellData(""MembershipContact"", ""SubCategory"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - revenue = obj.getCellData(""MembershipContact"", ""Revenue"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - cardholderName = obj.getCellData(""Payment"", ""Name"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - cardNumber = obj.getCellData(""Payment"", ""CardNumber"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - cardExpMonth = obj.getCellData(""Payment"", ""ExpMonth"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - cardExpYear = obj.getCellData(""Payment"", ""ExpYear"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - cvv = obj.getCellData(""Payment"", ""SecurityCode"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - billingAddress1 = obj.getCellData(""Payment"", ""Street1"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - billingAddress2 = obj.getCellData(""Payment"", ""Street2"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - billingCity = obj.getCellData(""Payment"", ""City"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+"Statement - billingState = obj.getCellData(""Payment"", ""State"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.000s,PASSED
+"Statement - billingZip = obj.getCellData(""Payment"", ""Zip"", 2)",Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:46,0.008s,PASSED
+navigateToUrl,Chrome 66.0.3359.181,,2018-06-13 14:45:46,2018-06-13 14:45:47,1.056s,PASSED
+click,Chrome 66.0.3359.181,,2018-06-13 14:45:47,2018-06-13 14:45:48,1.000s,PASSED
+"Statement - newPackage.SignIn.getSignIn(email, password)",Chrome 66.0.3359.181,,2018-06-13 14:45:48,2018-06-13 14:45:50,2.281s,PASSED
+"Statement - newPackage.membershipDetails.personalMailingDetails(attentionTo, company, address1, address2, city, state, zip)",Chrome 66.0.3359.181,,2018-06-13 14:45:50,2018-06-13 14:45:56,5.390s,PASSED
+"Statement - newPackage.membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue)",Chrome 66.0.3359.181,,2018-06-13 14:45:56,2018-06-13 14:45:58,2.462s,FAILED
+Start listener action : AfterTestCase,Chrome 66.0.3359.181,,2018-06-13 14:45:58,2018-06-13 14:45:59,0.882s,PASSED

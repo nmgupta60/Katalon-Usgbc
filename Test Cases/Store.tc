@@ -54,4 +54,32 @@
       <masked>false</masked>
       <name>StorePageContinue</name>
    </variable>
+   <variable>
+      <defaultValue>'SignIn'</defaultValue>
+      <description></description>
+      <id>a7ad2189-391a-4430-8a47-fa1125f9c745</id>
+      <masked>false</masked>
+      <name>signInSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Store'</defaultValue>
+      <description></description>
+      <id>84af1370-f1dc-473e-b9a2-dea3f3f61404</id>
+      <masked>false</masked>
+      <name>storeSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>c4ca1b06-0467-47ec-a2fc-9eee4e25c681</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>802d2827-f891-4f91-8840-0c8ca53bbd7e</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

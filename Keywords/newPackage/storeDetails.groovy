@@ -20,15 +20,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
-
+import main.BaseClass
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
-public class storeDetails {
+public class storeDetails extends BaseClass{
 
 	@Keyword
-	def public static void storeContact(String address1, String address2, String city, String state, String zip){
+	def  storeContact(String sheetName,int rowNum){
+				
+		String address1 = obj.getCellData(sheetName,"Street1",rowNum)
+		String address2 = obj.getCellData(sheetName,"Street2",rowNum)
+		String city = obj.getCellData(sheetName,"City",rowNum)
+		String state = obj.getCellData(sheetName,"StateCode",rowNum)
+		String zip = obj.getCellData(sheetName,"Zip",rowNum)
 
 		WebUI.setText(findTestObject('Object Repository/Store/Page_USGBC Store Contact Form  dyna/input_addressaddress_line1'), address1)
 

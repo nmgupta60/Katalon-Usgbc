@@ -23,32 +23,14 @@ import newPackage.payment
 import main.XlsReader
 import newPackage.Donation
 
-String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
 
-XlsReader obj = new XlsReader(path)
 
-String amount = obj.getCellData("Donation","Amount", 2)
-String donarName = obj.getCellData("Donation","donarName", 2)
-String dedicatedTo = obj.getCellData("Donation","DedicatedTo", 2)
-String email = obj.getCellData("Donation","Email", 2)
 
-String cardholderName = obj.getCellData("Payment", "Name", 2)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
-String cvv = obj.getCellData("Payment","SecurityCode", 2)
-
-String billingAddress1 = obj.getCellData("Payment","Street1",2)
-String billingAddress2 = obj.getCellData("Payment","Street2",2)
-String billingCity = obj.getCellData("Payment","City",2)
-String billingState = obj.getCellData("Payment","State",2)
-String billingZip = obj.getCellData("Payment","Zip",2)
 
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+DonationGreenAppleUrl)
 
-Donation.donationGreenApple(amount, donarName, dedicatedTo, email)
+CustomKeywords.'newPackage.Donation.donationGreenApple'(donationSheet, rowNum)
 
-payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
+CustomKeywords.'newPackage.payment.getPayment'(paymentSheet, rowNum)
 
-payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
-
+CustomKeywords.'newPackage.payment.getBillingDetails'(paymentSheet, rowNum)

@@ -20,32 +20,44 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
-
+import main.BaseClass
 import MobileBuiltInKeywords as Mobile
 import WSBuiltInKeywords as WS
 import WebUiBuiltInKeywords as WebUI
 
-public class payment {
+public class payment extends BaseClass {
 
 
 	@Keyword
-	def public static void getPayment(String cardholderName,String cardNumber, String expMonth, String expYear, String cvv ) {
+	def getPayment(String sheetName,int rowNum ) {
+		
+		String cardholderName = obj.getCellData(sheetName, "Name",rowNum)
+		String cardNumber = obj.getCellData(sheetName, "CardNumber", rowNum)
+		String cardExpMonth = obj.getCellData(sheetName, "ExpMonth", rowNum)
+		String cardExpYear = obj.getCellData(sheetName, "ExpYear", rowNum)
+		String cvv = obj.getCellData(sheetName,"SecurityCode", rowNum)
 
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_name_on_card'), cardholderName)
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_card_number'), cardNumber)
 
-		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'), expMonth,true)
+		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_Select01020304050607080'), cardExpMonth,true)
 
-		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), expYear,true)
+		WebUI.selectOptionByValue(findTestObject('payment/Page_Payment Form  dynamic-usgbc/select_select20182019202020212'), cardExpYear,true)
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_security_code'), cvv)
 	}
 
 
 	@Keyword
-	def public static void getBillingDetails(String billingAddress1,String billingAddress2, String billingCity, String billingState, String billingZip) {
+	def getBillingDetails(String sheetName,int rowNum ) {
+		
+		String billingAddress1 = obj.getCellData(sheetName,"Street1",rowNum)
+		String billingAddress2 = obj.getCellData(sheetName,"Street2",rowNum)
+		String billingCity = obj.getCellData(sheetName,"City",rowNum)
+		String billingState = obj.getCellData(sheetName,"State",rowNum)
+		String billingZip = obj.getCellData(sheetName,"Zip",rowNum)
 
 
 		WebUI.setText(findTestObject('payment/Page_Payment Form  dynamic-usgbc/input_billing_addressaddress_l'), billingAddress1)

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sample" time="26" tests="0" failures="1" errors="0">
+   <testsuite name="Sample" tests="0" failures="1" errors="0" time="26" timestamp="2018-06-13 12:01:29" hostname="ARJUN - ARJUNS" id="Test Suites/Sample">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Sample\\20180613_120122"/>
+         <property name="logFiles" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Sample\\20180613_120122\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Sample\\20180613_120122\\1528905713181.png"/>
+         <property name="hostName" value="ARJUN - ARJUNS"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 66.0.3359.181"/>
+         <property name="hostAddress" value="192.168.56.1"/>
+         <property name="sessionId" value="ece65079144bb67e6572c214e0fa69d6"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Membership" classname="Test Cases/Membership" status="FAILED">
+         <failure type="FAILED" message="Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)"/>
+         <system-out><![CDATA[2018-06-13 12:01:30 - [TEST_CASE][FAILED] - Test Cases/Membership: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-13 12:01:30 - [TEST_STEP][PASSED] - Start listener action : BeforeTestCase: Current window maximized
+
+2018-06-13 12:01:30 - [TEST_STEP][PASSED] - Statement - println("This is before TestCase"): null
+
+2018-06-13 12:01:30 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: ''
+
+2018-06-13 12:01:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2018-06-13 12:01:35 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-13 12:01:36 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io/' successfully
+
+2018-06-13 12:01:36 - [TEST_STEP][PASSED] - maximizeWindow: Current window maximized
+
+2018-06-13 12:01:37 - [MESSAGE][PASSED] - Current window maximized
+
+2018-06-13 12:01:38 - [TEST_STEP][PASSED] - Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx": null
+
+2018-06-13 12:01:38 - [TEST_STEP][PASSED] - Statement - obj = new main.XlsReader(path): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - email = obj.getCellData("SignIn", "Email", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - password = obj.getCellData("SignIn", "Password", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - attentionTo = obj.getCellData("MembershipContact", "AttentionTo", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - company = obj.getCellData("MembershipContact", "Company", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - address1 = obj.getCellData("MembershipContact", "Street1", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - address2 = obj.getCellData("MembershipContact", "Street2", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - city = obj.getCellData("MembershipContact", "City", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - state = obj.getCellData("MembershipContact", "StateCode", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - zip = obj.getCellData("MembershipContact", "Zip", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - term = obj.getCellData("MembershipContact", "Term", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - organizationName = obj.getCellData("MembershipContact", "OrganizationName", 2): null
+
+2018-06-13 12:01:40 - [TEST_STEP][PASSED] - Statement - website = obj.getCellData("MembershipContact", "Website", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - email1 = obj.getCellData("MembershipContact", "Email", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - category = obj.getCellData("MembershipContact", "IndustryCategory", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - subCategory = obj.getCellData("MembershipContact", "SubCategory", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - revenue = obj.getCellData("MembershipContact", "Revenue", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - cardholderName = obj.getCellData("Payment", "Name", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - billingCity = obj.getCellData("Payment", "City", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - billingState = obj.getCellData("Payment", "State", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - Statement - billingZip = obj.getCellData("Payment", "Zip", 2): null
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - navigateToUrl: Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//membership/contact' successfully
+
+2018-06-13 12:01:41 - [MESSAGE][PASSED] - Navigate to 'http://test-dynamic-usgbc.pantheonsite.io//membership/contact' successfully
+
+2018-06-13 12:01:41 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-06-13 12:01:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/a_Sign in' is clicked on
+
+2018-06-13 12:01:43 - [TEST_STEP][PASSED] - Statement - newPackage.SignIn.getSignIn(email, password): Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-13 12:01:43 - [MESSAGE][PASSED] - Text 'arjun@gmail.com' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_usernamae'
+
+2018-06-13 12:01:43 - [MESSAGE][PASSED] - Text 'initpass' is set on object 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_existinguser_password'
+
+2018-06-13 12:01:46 - [MESSAGE][PASSED] - Object: 'Object Repository/SignIn/Page_Sign-in Page  dynamic-usgbc/input_op' is clicked on
+
+2018-06-13 12:01:46 - [TEST_STEP][PASSED] - Statement - newPackage.membershipDetails.personalMailingDetails(attentionTo, company, address1, address2, city, state, zip): Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-13 12:01:46 - [MESSAGE][PASSED] - Text 'Test' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_attention_to'
+
+2018-06-13 12:01:46 - [MESSAGE][PASSED] - Text 'Promantus' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_company'
+
+2018-06-13 12:01:47 - [MESSAGE][PASSED] - Text '725 chestnut st' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addressaddress_line1'
+
+2018-06-13 12:01:47 - [MESSAGE][PASSED] - Text 'west' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addressaddress_line2'
+
+2018-06-13 12:01:47 - [MESSAGE][PASSED] - Text 'erie' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addresslocality'
+
+2018-06-13 12:01:49 - [MESSAGE][PASSED] - All options with value 'AL' are selected in object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/select_- Select -AlabamaAlaska'  using regular expression
+
+2018-06-13 12:01:49 - [MESSAGE][PASSED] - Text '16507' is set on object 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_addresspostal_code'
+
+2018-06-13 12:01:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_terms' is clicked on
+
+2018-06-13 12:01:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Membership Registration/Page_Contact Form  dynamic-usgbc/input_op' is clicked on
+
+2018-06-13 12:01:51 - [TEST_STEP][FAILED] - Statement - newPackage.membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue): Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+
+2018-06-13 12:01:51 - [MESSAGE][PASSED] - All options with value '2 years' are selected in object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_1 year2 years3 years' 
+
+2018-06-13 12:01:52 - [MESSAGE][PASSED] - Text 'Test Organization 598892' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_org_name'
+
+2018-06-13 12:01:52 - [MESSAGE][PASSED] - Text 'www.promantus.com' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_website'
+
+2018-06-13 12:01:53 - [MESSAGE][PASSED] - Text 'info@mallik.com' is set on object 'Object Repository/Membership Registration/Page_Organization Membership Form/input_email'
+
+2018-06-13 12:01:53 - [MESSAGE][FAILED] - Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)
+[[ATTACHMENT|C:\\Users\\ARJUN\\git\\Katalon-Usgbc\\Reports\\Sample\\20180613_120122\\1528905713181.png]]
+
+2018-06-13 12:01:53 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: Browser is closed
+
+2018-06-13 12:01:53 - [TEST_STEP][PASSED] - Statement - println("This is after TestCase"): null
+
+2018-06-13 12:01:53 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-13 12:01:54 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-13 12:01:30 - [TEST_CASE][FAILED] - Test Cases/Membership: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-13 12:01:29 - [TEST_SUITE][FAILED] - Sample: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)]]></system-out>
+      <system-err><![CDATA[2018-06-13 12:01:29 - [TEST_SUITE][FAILED] - Sample: Test Cases/Membership FAILED because (of) Unable to select option by value 'Real Estate' of object 'Object Repository/Membership Registration/Page_Organization Membership Form/select_Select a categoryBuildi'  (Root cause: org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Real Estate
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'ARJUNS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_102'
+Driver info: driver.version: unknown)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -27,48 +27,16 @@ import newPackage.payment
 
 import main.XlsReader
 
-String path = RunConfiguration.getProjectDir()+"\\DynamicUsgbc.xlsx"
-
-XlsReader obj = new XlsReader(path)
-String email = obj.getCellData("SignIn", "Email", 2)
-String password = obj.getCellData("SignIn", "Password", 2)
-
-String examType = obj.getCellData("ExamRegistration", "ExamType", 2)
-String language = obj.getCellData("ExamRegistration","Language", 2)
-
-String address1 = obj.getCellData("ExamRegistration","Street1",2)
-String address2 = obj.getCellData("ExamRegistration","Street2",2)
-String city = obj.getCellData("ExamRegistration","City",2)
-String state = obj.getCellData("ExamRegistration","StateCode",2)
-String zip = obj.getCellData("ExamRegistration","Zip",2)
-
-String dob = obj.getCellData("ExamRegistration","DOB", 2)
-String jobTitle = obj.getCellData("ExamRegistration","JobTitle", 2)
-String organization = obj.getCellData("ExamRegistration","Organization", 2)
-
-String cardholderName = obj.getCellData("Payment", "Name", 2)
-String cardNumber = obj.getCellData("Payment", "CardNumber", 2)
-String cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
-String cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
-String cvv = obj.getCellData("Payment","SecurityCode", 2)
-
-String billingAddress1 = obj.getCellData("Payment","Street1",2)
-String billingAddress2 = obj.getCellData("Payment","Street2",2)
-String billingCity = obj.getCellData("Payment","City",2)
-String billingState = obj.getCellData("Payment","State",2)
-String billingZip = obj.getCellData("Payment","Zip",2)
-
 WebUI.navigateToUrl(GlobalVariable.BaseUrl+examRegistrationUrl)
 WebUI.delay(2)
-ExamRegistrationDetails.examInfo(examType, language)
+CustomKeywords.'newPackage.ExamRegistrationDetails.examInfo'(examSheet, rowNum)
 
-SignIn.getSignIn(email, password)
+CustomKeywords.'newPackage.SignIn.getSignIn'(signInSheet, rowNum)
 WebUI.delay(3)
 
 WebUI.click(exampageContinue)
+CustomKeywords.'newPackage.ExamRegistrationDetails.candidateDetails'(examSheet, rowNum)
 
-ExamRegistrationDetails.candidateDetails(address1, address2, city, state, zip, dob, jobTitle, organization)
+CustomKeywords.'newPackage.payment.getPayment'(paymentSheet, rowNum)
 
-payment.getPayment(cardholderName, cardNumber, cardExpMonth, cardExpYear, cvv)
-
-payment.getBillingDetails(billingAddress1, billingAddress2, billingCity, billingState, billingZip)
+CustomKeywords.'newPackage.payment.getBillingDetails'(paymentSheet,rowNum)

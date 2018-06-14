@@ -1,0 +1,140 @@
+1
+00:00:00,557 --> 00:00:00,559
+1. Statement - path = com.kms.katalon.core.configuration.RunConfiguration.getProjectDir() + "\DynamicUsgbc.xlsx"
+
+2
+00:00:00,577 --> 00:00:00,578
+5. Statement - obj = new main.XlsReader(path)
+
+3
+00:00:02,718 --> 00:00:02,765
+9. Statement - email = obj.getCellData("SignIn", "Email", 2)
+
+4
+00:00:02,963 --> 00:00:02,988
+13. Statement - password = obj.getCellData("SignIn", "Password", 2)
+
+5
+00:00:02,988 --> 00:00:02,995
+17. Statement - attentionTo = obj.getCellData("MembershipContact", "AttentionTo", 2)
+
+6
+00:00:03,008 --> 00:00:03,012
+21. Statement - company = obj.getCellData("MembershipContact", "Company", 2)
+
+7
+00:00:03,021 --> 00:00:03,023
+25. Statement - address1 = obj.getCellData("MembershipContact", "Street1", 2)
+
+8
+00:00:03,032 --> 00:00:03,035
+29. Statement - address2 = obj.getCellData("MembershipContact", "Street2", 2)
+
+9
+00:00:03,038 --> 00:00:03,038
+33. Statement - city = obj.getCellData("MembershipContact", "City", 2)
+
+10
+00:00:03,047 --> 00:00:03,047
+37. Statement - state = obj.getCellData("MembershipContact", "StateCode", 2)
+
+11
+00:00:03,047 --> 00:00:03,055
+41. Statement - zip = obj.getCellData("MembershipContact", "Zip", 2)
+
+12
+00:00:03,055 --> 00:00:03,064
+45. Statement - term = obj.getCellData("MembershipContact", "Term", 2)
+
+13
+00:00:03,065 --> 00:00:03,070
+49. Statement - organizationName = obj.getCellData("MembershipContact", "OrganizationName", 2)
+
+14
+00:00:03,077 --> 00:00:03,081
+53. Statement - website = obj.getCellData("MembershipContact", "Website", 2)
+
+15
+00:00:03,085 --> 00:00:03,095
+57. Statement - email1 = obj.getCellData("MembershipContact", "Email", 2)
+
+16
+00:00:03,112 --> 00:00:03,114
+61. Statement - category = obj.getCellData("MembershipContact", "IndustryCategory", 2)
+
+17
+00:00:03,114 --> 00:00:03,114
+65. Statement - subCategory = obj.getCellData("MembershipContact", "SubCategory", 2)
+
+18
+00:00:03,122 --> 00:00:03,122
+69. Statement - revenue = obj.getCellData("MembershipContact", "Revenue", 2)
+
+19
+00:00:03,130 --> 00:00:03,138
+73. Statement - cardholderName = obj.getCellData("Payment", "Name", 2)
+
+20
+00:00:03,145 --> 00:00:03,148
+77. Statement - cardNumber = obj.getCellData("Payment", "CardNumber", 2)
+
+21
+00:00:03,150 --> 00:00:03,154
+81. Statement - cardExpMonth = obj.getCellData("Payment", "ExpMonth", 2)
+
+22
+00:00:03,158 --> 00:00:03,160
+85. Statement - cardExpYear = obj.getCellData("Payment", "ExpYear", 2)
+
+23
+00:00:03,165 --> 00:00:03,171
+89. Statement - cvv = obj.getCellData("Payment", "SecurityCode", 2)
+
+24
+00:00:03,177 --> 00:00:03,182
+93. Statement - billingAddress1 = obj.getCellData("Payment", "Street1", 2)
+
+25
+00:00:03,187 --> 00:00:03,194
+97. Statement - billingAddress2 = obj.getCellData("Payment", "Street2", 2)
+
+26
+00:00:03,197 --> 00:00:03,199
+101. Statement - billingCity = obj.getCellData("Payment", "City", 2)
+
+27
+00:00:03,202 --> 00:00:03,204
+105. Statement - billingState = obj.getCellData("Payment", "State", 2)
+
+28
+00:00:03,204 --> 00:00:03,212
+109. Statement - billingZip = obj.getCellData("Payment", "Zip", 2)
+
+29
+00:00:03,213 --> 00:00:03,213
+113. navigateToUrl
+
+30
+00:00:04,026 --> 00:00:04,028
+117. click
+
+31
+00:00:05,370 --> 00:00:05,370
+121. Statement - newPackage.SignIn.getSignIn(email, password)
+
+32
+00:00:08,302 --> 00:00:08,303
+125. Statement - newPackage.membershipDetails.personalMailingDetails(attentionTo, company, address1, address2, city, state, zip)
+
+33
+00:00:13,331 --> 00:00:13,333
+129. Statement - newPackage.membershipDetails.organizationalDetails(term, organizationName, website, email1, category, subCategory, revenue)
+
+34
+00:00:15,713 --> 00:00:15,715
+1. Statement - println("This is after TestCase")
+
+35
+00:00:15,717 --> 00:00:15,719
+5. closeBrowser
+

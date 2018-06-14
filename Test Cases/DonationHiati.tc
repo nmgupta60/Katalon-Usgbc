@@ -12,4 +12,25 @@
       <masked>false</masked>
       <name>DonationHaitiUrl</name>
    </variable>
+   <variable>
+      <defaultValue>'Donation'</defaultValue>
+      <description></description>
+      <id>91bb1bd1-5f4b-4f0d-8638-40552acb98c2</id>
+      <masked>false</masked>
+      <name>donationSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>4a405ce0-c49d-44e4-830a-d8ffc83fc58c</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>0e21b275-b49b-40b3-b62d-daee3dadf36f</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
 </TestCaseEntity>

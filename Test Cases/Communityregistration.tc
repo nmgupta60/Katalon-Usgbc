@@ -12,4 +12,32 @@
       <masked>false</masked>
       <name>membershipUrl</name>
    </variable>
+   <variable>
+      <defaultValue>'CommunityRegistratioon'</defaultValue>
+      <description></description>
+      <id>2288aca0-30a5-45f1-9d50-c6bb1bb37c57</id>
+      <masked>false</masked>
+      <name>communitySheetName</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>c707ef37-a487-4e7e-a690-8cc7ac843f5a</id>
+      <masked>false</masked>
+      <name>rowNum</name>
+   </variable>
+   <variable>
+      <defaultValue>'SignIn'</defaultValue>
+      <description></description>
+      <id>e29d1bdb-f99e-4eed-9c4d-940b0b97f88d</id>
+      <masked>false</masked>
+      <name>signInSheet</name>
+   </variable>
+   <variable>
+      <defaultValue>'Payment'</defaultValue>
+      <description></description>
+      <id>1ff97675-f139-4c6e-9cdb-17f7fd82488d</id>
+      <masked>false</masked>
+      <name>paymentSheet</name>
+   </variable>
 </TestCaseEntity>
